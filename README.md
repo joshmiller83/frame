@@ -23,6 +23,15 @@ Frame strictly follows the Semantic Frame Pattern (SFP) v0.1.0 specification. Wh
 
 See [docs/sfp.md](docs/sfp.md) for the underlying SFP specification.
 
+## Usage
+
+Frame provides two ways to consume its vocabulary:
+
+1. **[LEGEND.yaml](LEGEND.yaml)**: The canonical, human-readable source of truth. It contains full definitions for every tag, composition rules, and stability policies. Use this for human reference or when providing a full mental model to a reasoning system.
+2. **[LEGEND-minified.txt](LEGEND-minified.txt)**: A highly compact version (under 1KB) designed for prompt injection. It includes the core instruction and a plain list of tags.
+
+**Note:** The minified version trades context for efficiency. It does not include the detailed tag definitions or the clarifying policies found in the main legend.
+
 ## Example Frame
 
 A Frame is composed of four facets: Domain, Object, Mode, and Context.
