@@ -1,4 +1,6 @@
 frame_core:
+  instruction: Treat Frame as a classification taxonomy. Tag resources by combining full facet names and child terms with a period (e.g., Domain.Technology).
+
   meta:
     id: Frame-Core
     version: 0.0.1
