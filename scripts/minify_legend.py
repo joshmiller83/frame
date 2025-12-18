@@ -31,5 +31,5 @@ def minify_legend(input_path, output_path):
         sys.exit(1)
 
 if __name__ == "__main__":
-    minify_legend("LEGEND.yaml", "LEGEND-minified.txt")
+    minify_legend("LEGEND-frame-core.yaml", "LEGEND-frame-core-minified.txt")
 
