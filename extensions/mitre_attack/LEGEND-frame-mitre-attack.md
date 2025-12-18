@@ -5,7 +5,7 @@
 - **Maintainers:** Frame Maintainers
 - **Namespace:** mitre.attack
 - **Extends:** Domain.Security
-- **Created:** 2025-12-18T18:29:57.904897+00:00
+- **Created:** 2025-12-18T19:17:21.023383+00:00
 
 ## Usage
 Use 1–3 mitre.attack:* tags per resource.

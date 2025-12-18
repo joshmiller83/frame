@@ -1,6 +1,6 @@
 # Source Provenance
 
-Generated at: 2025-12-18T18:29:57.904897+00:00
+Generated at: 2025-12-18T19:17:21.023383+00:00
 Index URL: https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/index.json
 
 ## Collections Used

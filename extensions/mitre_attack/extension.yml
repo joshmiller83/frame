@@ -15,6 +15,6 @@ source:
   version_rule: latest
 
 output:
-  file: LEGEND.md
+  file: LEGEND-frame-mitre-attack.md
   sort_by: id
   include_labels: true
