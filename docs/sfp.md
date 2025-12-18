@@ -1,9 +1,7 @@
 # Semantic Frame Pattern (SFP) v0.1.0
 
-> **Note:** This document defines the pattern Frame follows. Frame does not redefine this specification.
+This implementation follows the Semantic Frame Pattern specification.
 
-<!-- 
-ERROR: The SFP v0.1.0 specification text was referenced in the instructions ("Copy the provided SFP v0.1.0 spec provided below") but was not found in the input prompt.
+**Specification:** [https://github.com/joshmiller83/semantic_frame_pattern/blob/main/SPEC.md](https://github.com/joshmiller83/semantic_frame_pattern/blob/main/SPEC.md)
 
-Please paste the SFP v0.1.0 specification here verbatim.
--->
+> **Note:** Frame does not redefine this specification.
