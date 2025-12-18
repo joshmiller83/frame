@@ -7,48 +7,24 @@ def minify_legend(input_path, output_path):
             data = yaml.safe_load(f)
         
         core = data.get('frame_core', {})
-        parts = []
-
-        # 1. Instruction
-        if 'instruction' in core:
-            parts.append(f"!INST:{core['instruction']}")
-
-        # 2. Rules (Compact representation)
-        rules = core.get('rules', {})
-        rule_parts = []
-        if 'composition' in rules:
-            comp = rules['composition']
-            # Sort for stability
-            comp_str = ",".join([f"{k}={v}" for k, v in sorted(comp.items())])
-            rule_parts.append(f"Comp:{comp_str}")
         
-        if 'policies' in rules:
-            pol = rules['policies']
-            # Simplified policies
-            if 'ambiguity' in pol:
-                rule_parts.append("Ambig:Omit")
-            if 'stability' in pol:
-                rule_parts.append("Stable:NoDrift")
+        instruction = core.get('instruction', '')
+        addendum = "Only one tag per facet."
+        full_prompt = f"{instruction} {addendum}"
         
-        if rule_parts:
-            parts.append(f"!RULES:{';'.join(rule_parts)}")
-
-        # 3. Facets
+        facet_lines = []
         facets = core.get('facets', {})
         for facet_name, facet_data in sorted(facets.items()):
             tags = facet_data.get('tags', {})
-            for tag_name, tag_desc in sorted(tags.items()):
-                # Clean description: remove trailing periods, extra spaces
-                desc = tag_desc.strip().rstrip('.')
-                parts.append(f"{facet_name}.{tag_name}:{desc}")
+            for tag_name in sorted(tags.keys()):
+                facet_lines.append(f"{facet_name}.{tag_name}")
 
-        # Join with pipes
-        minified_content = "|".join(parts)
+        content = f"{full_prompt}\n\n" + "\n".join(facet_lines)
 
         with open(output_path, 'w') as f:
-            f.write(minified_content)
+            f.write(content)
         
-        print(f"Minified legend written to {output_path} ({len(minified_content)} bytes)")
+        print(f"Minified legend written to {output_path} ({len(content)} bytes)")
 
     except Exception as e:
         print(f"Error minifying legend: {e}")
@@ -56,3 +32,4 @@ def minify_legend(input_path, output_path):
 
 if __name__ == "__main__":
     minify_legend("LEGEND.yaml", "LEGEND-minified.txt")
+
