@@ -18,3 +18,4 @@ output:
   file: LEGEND-frame-mitre-attack.md
   sort_by: id
   include_labels: true
+  include_hierarchy_in_id: true

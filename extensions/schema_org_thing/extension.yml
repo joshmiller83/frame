@@ -7,7 +7,7 @@ namespace: Schema
 extends: Object
 source:
   url: https://schema.org/version/latest/schemaorg-all-https.jsonld
-  max_depth: 3
+  max_depth: 2
 output:
   file: LEGEND-schema-org-thing.md
   sort_by: id

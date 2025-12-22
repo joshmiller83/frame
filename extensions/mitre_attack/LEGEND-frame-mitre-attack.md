@@ -5,908 +5,1135 @@
 - **Maintainers:** Frame Maintainers
 - **Namespace:** mitre.attack
 - **Extends:** Domain.Security
-- **Created:** 2025-12-18T19:17:21.023383+00:00
+- **Created:** 2025-12-22T17:16:21.826719+00:00
 
 ## Usage
 Use 1–3 mitre.attack:* tags per resource.
 Frames remain interpretable without this extension.
 
 ## Tags
-- `mitre.attack:T0800` — Activate Firmware Update Mode
-- `mitre.attack:T0801` — Monitor Process State
-- `mitre.attack:T0802` — Automated Collection
-- `mitre.attack:T0803` — Block Command Message
-- `mitre.attack:T0804` — Block Reporting Message
-- `mitre.attack:T0805` — Block Serial COM
-- `mitre.attack:T0806` — Brute Force I/O
-- `mitre.attack:T0807` — Command-Line Interface
-- `mitre.attack:T0809` — Data Destruction
-- `mitre.attack:T0811` — Data from Information Repositories
-- `mitre.attack:T0812` — Default Credentials
-- `mitre.attack:T0813` — Denial of Control
-- `mitre.attack:T0814` — Denial of Service
-- `mitre.attack:T0815` — Denial of View
-- `mitre.attack:T0816` — Device Restart/Shutdown
-- `mitre.attack:T0817` — Drive-by Compromise
-- `mitre.attack:T0819` — Exploit Public-Facing Application
-- `mitre.attack:T0820` — Exploitation for Evasion
-- `mitre.attack:T0821` — Modify Controller Tasking
-- `mitre.attack:T0822` — External Remote Services
-- `mitre.attack:T0823` — Graphical User Interface
-- `mitre.attack:T0826` — Loss of Availability
-- `mitre.attack:T0827` — Loss of Control
-- `mitre.attack:T0828` — Loss of Productivity and Revenue
-- `mitre.attack:T0829` — Loss of View
-- `mitre.attack:T0830` — Adversary-in-the-Middle
-- `mitre.attack:T0831` — Manipulation of Control
-- `mitre.attack:T0832` — Manipulation of View
-- `mitre.attack:T0834` — Native API
-- `mitre.attack:T0835` — Manipulate I/O Image
-- `mitre.attack:T0836` — Modify Parameter
-- `mitre.attack:T0837` — Loss of Protection
-- `mitre.attack:T0838` — Modify Alarm Settings
-- `mitre.attack:T0839` — Module Firmware
-- `mitre.attack:T0840` — Network Connection Enumeration
-- `mitre.attack:T0842` — Network Sniffing
-- `mitre.attack:T0843` — Program Download
-- `mitre.attack:T0845` — Program Upload
-- `mitre.attack:T0846` — Remote System Discovery
-- `mitre.attack:T0847` — Replication Through Removable Media
-- `mitre.attack:T0848` — Rogue Master
-- `mitre.attack:T0849` — Masquerading
-- `mitre.attack:T0851` — Rootkit
-- `mitre.attack:T0852` — Screen Capture
-- `mitre.attack:T0853` — Scripting
-- `mitre.attack:T0855` — Unauthorized Command Message
-- `mitre.attack:T0856` — Spoof Reporting Message
-- `mitre.attack:T0857` — System Firmware
-- `mitre.attack:T0858` — Change Operating Mode
-- `mitre.attack:T0859` — Valid Accounts
-- `mitre.attack:T0860` — Wireless Compromise
-- `mitre.attack:T0861` — Point & Tag Identification
-- `mitre.attack:T0862` — Supply Chain Compromise
-- `mitre.attack:T0863` — User Execution
-- `mitre.attack:T0864` — Transient Cyber Asset
-- `mitre.attack:T0865` — Spearphishing Attachment
-- `mitre.attack:T0866` — Exploitation of Remote Services
-- `mitre.attack:T0867` — Lateral Tool Transfer
-- `mitre.attack:T0868` — Detect Operating Mode
-- `mitre.attack:T0869` — Standard Application Layer Protocol
-- `mitre.attack:T0871` — Execution through API
-- `mitre.attack:T0872` — Indicator Removal on Host
-- `mitre.attack:T0873` — Project File Infection
-- `mitre.attack:T0874` — Hooking
-- `mitre.attack:T0877` — I/O Image
-- `mitre.attack:T0878` — Alarm Suppression
-- `mitre.attack:T0879` — Damage to Property
-- `mitre.attack:T0880` — Loss of Safety
-- `mitre.attack:T0881` — Service Stop
-- `mitre.attack:T0882` — Theft of Operational Information
-- `mitre.attack:T0883` — Internet Accessible Device
-- `mitre.attack:T0884` — Connection Proxy
-- `mitre.attack:T0885` — Commonly Used Port
-- `mitre.attack:T0886` — Remote Services
-- `mitre.attack:T0887` — Wireless Sniffing
-- `mitre.attack:T0888` — Remote System Information Discovery
-- `mitre.attack:T0889` — Modify Program
-- `mitre.attack:T0890` — Exploitation for Privilege Escalation
-- `mitre.attack:T0891` — Hardcoded Credentials
-- `mitre.attack:T0892` — Change Credential
-- `mitre.attack:T0893` — Data from Local System
-- `mitre.attack:T0894` — System Binary Proxy Execution
-- `mitre.attack:T0895` — Autorun Image
-- `mitre.attack:T1001` — Data Obfuscation
-- `mitre.attack:T1001.001` — Junk Data
-- `mitre.attack:T1001.002` — Steganography
-- `mitre.attack:T1001.003` — Protocol or Service Impersonation
-- `mitre.attack:T1003` — OS Credential Dumping
-- `mitre.attack:T1003.001` — LSASS Memory
-- `mitre.attack:T1003.002` — Security Account Manager
-- `mitre.attack:T1003.003` — NTDS
-- `mitre.attack:T1003.004` — LSA Secrets
-- `mitre.attack:T1003.005` — Cached Domain Credentials
-- `mitre.attack:T1003.006` — DCSync
-- `mitre.attack:T1003.007` — Proc Filesystem
-- `mitre.attack:T1003.008` — /etc/passwd and /etc/shadow
-- `mitre.attack:T1005` — Data from Local System
-- `mitre.attack:T1006` — Direct Volume Access
-- `mitre.attack:T1007` — System Service Discovery
-- `mitre.attack:T1008` — Fallback Channels
-- `mitre.attack:T1010` — Application Window Discovery
-- `mitre.attack:T1011` — Exfiltration Over Other Network Medium
-- `mitre.attack:T1011.001` — Exfiltration Over Bluetooth
-- `mitre.attack:T1012` — Query Registry
-- `mitre.attack:T1014` — Rootkit
-- `mitre.attack:T1016` — System Network Configuration Discovery
-- `mitre.attack:T1016.001` — Internet Connection Discovery
-- `mitre.attack:T1016.002` — Wi-Fi Discovery
-- `mitre.attack:T1018` — Remote System Discovery
-- `mitre.attack:T1020` — Automated Exfiltration
-- `mitre.attack:T1020.001` — Traffic Duplication
-- `mitre.attack:T1021` — Remote Services
-- `mitre.attack:T1021.001` — Remote Desktop Protocol
-- `mitre.attack:T1021.002` — SMB/Windows Admin Shares
-- `mitre.attack:T1021.003` — Distributed Component Object Model
-- `mitre.attack:T1021.004` — SSH
-- `mitre.attack:T1021.005` — VNC
-- `mitre.attack:T1021.006` — Windows Remote Management
-- `mitre.attack:T1021.007` — Cloud Services
-- `mitre.attack:T1021.008` — Direct Cloud VM Connections
-- `mitre.attack:T1025` — Data from Removable Media
-- `mitre.attack:T1027` — Obfuscated Files or Information
-- `mitre.attack:T1027.001` — Binary Padding
-- `mitre.attack:T1027.002` — Software Packing
-- `mitre.attack:T1027.003` — Steganography
-- `mitre.attack:T1027.004` — Compile After Delivery
-- `mitre.attack:T1027.005` — Indicator Removal from Tools
-- `mitre.attack:T1027.006` — HTML Smuggling
-- `mitre.attack:T1027.007` — Dynamic API Resolution
-- `mitre.attack:T1027.008` — Stripped Payloads
-- `mitre.attack:T1027.009` — Embedded Payloads
-- `mitre.attack:T1027.010` — Command Obfuscation
-- `mitre.attack:T1027.011` — Fileless Storage
-- `mitre.attack:T1027.012` — LNK Icon Smuggling
-- `mitre.attack:T1027.013` — Encrypted/Encoded File
-- `mitre.attack:T1027.014` — Polymorphic Code
-- `mitre.attack:T1027.015` — Compression
-- `mitre.attack:T1027.016` — Junk Code Insertion
-- `mitre.attack:T1027.017` — SVG Smuggling
-- `mitre.attack:T1029` — Scheduled Transfer
-- `mitre.attack:T1030` — Data Transfer Size Limits
-- `mitre.attack:T1033` — System Owner/User Discovery
-- `mitre.attack:T1036` — Masquerading
-- `mitre.attack:T1036.001` — Invalid Code Signature
-- `mitre.attack:T1036.002` — Right-to-Left Override
-- `mitre.attack:T1036.003` — Rename Legitimate Utilities
-- `mitre.attack:T1036.004` — Masquerade Task or Service
-- `mitre.attack:T1036.005` — Match Legitimate Resource Name or Location
-- `mitre.attack:T1036.006` — Space after Filename
-- `mitre.attack:T1036.007` — Double File Extension
-- `mitre.attack:T1036.008` — Masquerade File Type
-- `mitre.attack:T1036.009` — Break Process Trees
-- `mitre.attack:T1036.010` — Masquerade Account Name
-- `mitre.attack:T1036.011` — Overwrite Process Arguments
-- `mitre.attack:T1036.012` — Browser Fingerprint
-- `mitre.attack:T1037` — Boot or Logon Initialization Scripts
-- `mitre.attack:T1037.001` — Logon Script (Windows)
-- `mitre.attack:T1037.002` — Login Hook
-- `mitre.attack:T1037.003` — Network Logon Script
-- `mitre.attack:T1037.004` — RC Scripts
-- `mitre.attack:T1037.005` — Startup Items
-- `mitre.attack:T1039` — Data from Network Shared Drive
-- `mitre.attack:T1040` — Network Sniffing
-- `mitre.attack:T1041` — Exfiltration Over C2 Channel
-- `mitre.attack:T1046` — Network Service Discovery
-- `mitre.attack:T1047` — Windows Management Instrumentation
-- `mitre.attack:T1048` — Exfiltration Over Alternative Protocol
-- `mitre.attack:T1048.001` — Exfiltration Over Symmetric Encrypted Non-C2 Protocol
-- `mitre.attack:T1048.002` — Exfiltration Over Asymmetric Encrypted Non-C2 Protocol
-- `mitre.attack:T1048.003` — Exfiltration Over Unencrypted Non-C2 Protocol
-- `mitre.attack:T1049` — System Network Connections Discovery
-- `mitre.attack:T1052` — Exfiltration Over Physical Medium
-- `mitre.attack:T1052.001` — Exfiltration over USB
-- `mitre.attack:T1053` — Scheduled Task/Job
-- `mitre.attack:T1053.002` — At
-- `mitre.attack:T1053.003` — Cron
-- `mitre.attack:T1053.005` — Scheduled Task
-- `mitre.attack:T1053.006` — Systemd Timers
-- `mitre.attack:T1053.007` — Container Orchestration Job
-- `mitre.attack:T1055` — Process Injection
-- `mitre.attack:T1055.001` — Dynamic-link Library Injection
-- `mitre.attack:T1055.002` — Portable Executable Injection
-- `mitre.attack:T1055.003` — Thread Execution Hijacking
-- `mitre.attack:T1055.004` — Asynchronous Procedure Call
-- `mitre.attack:T1055.005` — Thread Local Storage
-- `mitre.attack:T1055.008` — Ptrace System Calls
-- `mitre.attack:T1055.009` — Proc Memory
-- `mitre.attack:T1055.011` — Extra Window Memory Injection
-- `mitre.attack:T1055.012` — Process Hollowing
-- `mitre.attack:T1055.013` — Process Doppelgänging
-- `mitre.attack:T1055.014` — VDSO Hijacking
-- `mitre.attack:T1055.015` — ListPlanting
-- `mitre.attack:T1056` — Input Capture
-- `mitre.attack:T1056.001` — Keylogging
-- `mitre.attack:T1056.002` — GUI Input Capture
-- `mitre.attack:T1056.003` — Web Portal Capture
-- `mitre.attack:T1056.004` — Credential API Hooking
-- `mitre.attack:T1057` — Process Discovery
-- `mitre.attack:T1059` — Command and Scripting Interpreter
-- `mitre.attack:T1059.001` — PowerShell
-- `mitre.attack:T1059.002` — AppleScript
-- `mitre.attack:T1059.003` — Windows Command Shell
-- `mitre.attack:T1059.004` — Unix Shell
-- `mitre.attack:T1059.005` — Visual Basic
-- `mitre.attack:T1059.006` — Python
-- `mitre.attack:T1059.007` — JavaScript
-- `mitre.attack:T1059.008` — Network Device CLI
-- `mitre.attack:T1059.009` — Cloud API
-- `mitre.attack:T1059.010` — AutoHotKey & AutoIT
-- `mitre.attack:T1059.011` — Lua
-- `mitre.attack:T1059.012` — Hypervisor CLI
-- `mitre.attack:T1059.013` — Container CLI/API
-- `mitre.attack:T1068` — Exploitation for Privilege Escalation
-- `mitre.attack:T1069` — Permission Groups Discovery
-- `mitre.attack:T1069.001` — Local Groups
-- `mitre.attack:T1069.002` — Domain Groups
-- `mitre.attack:T1069.003` — Cloud Groups
-- `mitre.attack:T1070` — Indicator Removal
-- `mitre.attack:T1070.001` — Clear Windows Event Logs
-- `mitre.attack:T1070.002` — Clear Linux or Mac System Logs
-- `mitre.attack:T1070.003` — Clear Command History
-- `mitre.attack:T1070.004` — File Deletion
-- `mitre.attack:T1070.005` — Network Share Connection Removal
-- `mitre.attack:T1070.006` — Timestomp
-- `mitre.attack:T1070.007` — Clear Network Connection History and Configurations
-- `mitre.attack:T1070.008` — Clear Mailbox Data
-- `mitre.attack:T1070.009` — Clear Persistence
-- `mitre.attack:T1070.010` — Relocate Malware
-- `mitre.attack:T1071` — Application Layer Protocol
-- `mitre.attack:T1071.001` — Web Protocols
-- `mitre.attack:T1071.002` — File Transfer Protocols
-- `mitre.attack:T1071.003` — Mail Protocols
-- `mitre.attack:T1071.004` — DNS
-- `mitre.attack:T1071.005` — Publish/Subscribe Protocols
-- `mitre.attack:T1072` — Software Deployment Tools
-- `mitre.attack:T1074` — Data Staged
-- `mitre.attack:T1074.001` — Local Data Staging
-- `mitre.attack:T1074.002` — Remote Data Staging
-- `mitre.attack:T1078` — Valid Accounts
-- `mitre.attack:T1078.001` — Default Accounts
-- `mitre.attack:T1078.002` — Domain Accounts
-- `mitre.attack:T1078.003` — Local Accounts
-- `mitre.attack:T1078.004` — Cloud Accounts
-- `mitre.attack:T1080` — Taint Shared Content
-- `mitre.attack:T1082` — System Information Discovery
-- `mitre.attack:T1083` — File and Directory Discovery
-- `mitre.attack:T1087` — Account Discovery
-- `mitre.attack:T1087.001` — Local Account
-- `mitre.attack:T1087.002` — Domain Account
-- `mitre.attack:T1087.003` — Email Account
-- `mitre.attack:T1087.004` — Cloud Account
-- `mitre.attack:T1090` — Proxy
-- `mitre.attack:T1090.001` — Internal Proxy
-- `mitre.attack:T1090.002` — External Proxy
-- `mitre.attack:T1090.003` — Multi-hop Proxy
-- `mitre.attack:T1090.004` — Domain Fronting
-- `mitre.attack:T1091` — Replication Through Removable Media
-- `mitre.attack:T1092` — Communication Through Removable Media
-- `mitre.attack:T1095` — Non-Application Layer Protocol
-- `mitre.attack:T1098` — Account Manipulation
-- `mitre.attack:T1098.001` — Additional Cloud Credentials
-- `mitre.attack:T1098.002` — Additional Email Delegate Permissions
-- `mitre.attack:T1098.003` — Additional Cloud Roles
-- `mitre.attack:T1098.004` — SSH Authorized Keys
-- `mitre.attack:T1098.005` — Device Registration
-- `mitre.attack:T1098.006` — Additional Container Cluster Roles
-- `mitre.attack:T1098.007` — Additional Local or Domain Groups
-- `mitre.attack:T1102` — Web Service
-- `mitre.attack:T1102.001` — Dead Drop Resolver
-- `mitre.attack:T1102.002` — Bidirectional Communication
-- `mitre.attack:T1102.003` — One-Way Communication
-- `mitre.attack:T1104` — Multi-Stage Channels
-- `mitre.attack:T1105` — Ingress Tool Transfer
-- `mitre.attack:T1106` — Native API
-- `mitre.attack:T1110` — Brute Force
-- `mitre.attack:T1110.001` — Password Guessing
-- `mitre.attack:T1110.002` — Password Cracking
-- `mitre.attack:T1110.003` — Password Spraying
-- `mitre.attack:T1110.004` — Credential Stuffing
-- `mitre.attack:T1111` — Multi-Factor Authentication Interception
-- `mitre.attack:T1112` — Modify Registry
-- `mitre.attack:T1113` — Screen Capture
-- `mitre.attack:T1114` — Email Collection
-- `mitre.attack:T1114.001` — Local Email Collection
-- `mitre.attack:T1114.002` — Remote Email Collection
-- `mitre.attack:T1114.003` — Email Forwarding Rule
-- `mitre.attack:T1115` — Clipboard Data
-- `mitre.attack:T1119` — Automated Collection
-- `mitre.attack:T1120` — Peripheral Device Discovery
-- `mitre.attack:T1123` — Audio Capture
-- `mitre.attack:T1124` — System Time Discovery
-- `mitre.attack:T1125` — Video Capture
-- `mitre.attack:T1127` — Trusted Developer Utilities Proxy Execution
-- `mitre.attack:T1127.001` — MSBuild
-- `mitre.attack:T1127.002` — ClickOnce
-- `mitre.attack:T1127.003` — JamPlus
-- `mitre.attack:T1129` — Shared Modules
-- `mitre.attack:T1132` — Data Encoding
-- `mitre.attack:T1132.001` — Standard Encoding
-- `mitre.attack:T1132.002` — Non-Standard Encoding
-- `mitre.attack:T1133` — External Remote Services
-- `mitre.attack:T1134` — Access Token Manipulation
-- `mitre.attack:T1134.001` — Token Impersonation/Theft
-- `mitre.attack:T1134.002` — Create Process with Token
-- `mitre.attack:T1134.003` — Make and Impersonate Token
-- `mitre.attack:T1134.004` — Parent PID Spoofing
-- `mitre.attack:T1134.005` — SID-History Injection
-- `mitre.attack:T1135` — Network Share Discovery
-- `mitre.attack:T1136` — Create Account
-- `mitre.attack:T1136.001` — Local Account
-- `mitre.attack:T1136.002` — Domain Account
-- `mitre.attack:T1136.003` — Cloud Account
-- `mitre.attack:T1137` — Office Application Startup
-- `mitre.attack:T1137.001` — Office Template Macros
-- `mitre.attack:T1137.002` — Office Test
-- `mitre.attack:T1137.003` — Outlook Forms
-- `mitre.attack:T1137.004` — Outlook Home Page
-- `mitre.attack:T1137.005` — Outlook Rules
-- `mitre.attack:T1137.006` — Add-ins
-- `mitre.attack:T1140` — Deobfuscate/Decode Files or Information
-- `mitre.attack:T1176` — Software Extensions
-- `mitre.attack:T1176.001` — Browser Extensions
-- `mitre.attack:T1176.002` — IDE Extensions
-- `mitre.attack:T1185` — Browser Session Hijacking
-- `mitre.attack:T1187` — Forced Authentication
-- `mitre.attack:T1189` — Drive-by Compromise
-- `mitre.attack:T1190` — Exploit Public-Facing Application
-- `mitre.attack:T1195` — Supply Chain Compromise
-- `mitre.attack:T1195.001` — Compromise Software Dependencies and Development Tools
-- `mitre.attack:T1195.002` — Compromise Software Supply Chain
-- `mitre.attack:T1195.003` — Compromise Hardware Supply Chain
-- `mitre.attack:T1197` — BITS Jobs
-- `mitre.attack:T1199` — Trusted Relationship
-- `mitre.attack:T1200` — Hardware Additions
-- `mitre.attack:T1201` — Password Policy Discovery
-- `mitre.attack:T1202` — Indirect Command Execution
-- `mitre.attack:T1203` — Exploitation for Client Execution
-- `mitre.attack:T1204` — User Execution
-- `mitre.attack:T1204.001` — Malicious Link
-- `mitre.attack:T1204.002` — Malicious File
-- `mitre.attack:T1204.003` — Malicious Image
-- `mitre.attack:T1204.004` — Malicious Copy and Paste
-- `mitre.attack:T1204.005` — Malicious Library
-- `mitre.attack:T1205` — Traffic Signaling
-- `mitre.attack:T1205.001` — Port Knocking
-- `mitre.attack:T1205.002` — Socket Filters
-- `mitre.attack:T1207` — Rogue Domain Controller
-- `mitre.attack:T1210` — Exploitation of Remote Services
-- `mitre.attack:T1211` — Exploitation for Defense Evasion
-- `mitre.attack:T1212` — Exploitation for Credential Access
-- `mitre.attack:T1213` — Data from Information Repositories
-- `mitre.attack:T1213.001` — Confluence
-- `mitre.attack:T1213.002` — Sharepoint
-- `mitre.attack:T1213.003` — Code Repositories
-- `mitre.attack:T1213.004` — Customer Relationship Management Software
-- `mitre.attack:T1213.005` — Messaging Applications
-- `mitre.attack:T1213.006` — Databases
-- `mitre.attack:T1216` — System Script Proxy Execution
-- `mitre.attack:T1216.001` — PubPrn
-- `mitre.attack:T1216.002` — SyncAppvPublishingServer
-- `mitre.attack:T1217` — Browser Information Discovery
-- `mitre.attack:T1218` — System Binary Proxy Execution
-- `mitre.attack:T1218.001` — Compiled HTML File
-- `mitre.attack:T1218.002` — Control Panel
-- `mitre.attack:T1218.003` — CMSTP
-- `mitre.attack:T1218.004` — InstallUtil
-- `mitre.attack:T1218.005` — Mshta
-- `mitre.attack:T1218.007` — Msiexec
-- `mitre.attack:T1218.008` — Odbcconf
-- `mitre.attack:T1218.009` — Regsvcs/Regasm
-- `mitre.attack:T1218.010` — Regsvr32
-- `mitre.attack:T1218.011` — Rundll32
-- `mitre.attack:T1218.012` — Verclsid
-- `mitre.attack:T1218.013` — Mavinject
-- `mitre.attack:T1218.014` — MMC
-- `mitre.attack:T1218.015` — Electron Applications
-- `mitre.attack:T1219` — Remote Access Tools
-- `mitre.attack:T1219.001` — IDE Tunneling
-- `mitre.attack:T1219.002` — Remote Desktop Software
-- `mitre.attack:T1219.003` — Remote Access Hardware
-- `mitre.attack:T1220` — XSL Script Processing
-- `mitre.attack:T1221` — Template Injection
-- `mitre.attack:T1222` — File and Directory Permissions Modification
-- `mitre.attack:T1222.001` — Windows File and Directory Permissions Modification
-- `mitre.attack:T1222.002` — Linux and Mac File and Directory Permissions Modification
-- `mitre.attack:T1398` — Boot or Logon Initialization Scripts
-- `mitre.attack:T1404` — Exploitation for Privilege Escalation
-- `mitre.attack:T1406` — Obfuscated Files or Information
-- `mitre.attack:T1406.001` — Steganography
-- `mitre.attack:T1406.002` — Software Packing
-- `mitre.attack:T1407` — Download New Code at Runtime
-- `mitre.attack:T1409` — Stored Application Data
-- `mitre.attack:T1414` — Clipboard Data
-- `mitre.attack:T1417` — Input Capture
-- `mitre.attack:T1417.001` — Keylogging
-- `mitre.attack:T1417.002` — GUI Input Capture
-- `mitre.attack:T1418` — Software Discovery
-- `mitre.attack:T1418.001` — Security Software Discovery
-- `mitre.attack:T1420` — File and Directory Discovery
-- `mitre.attack:T1421` — System Network Connections Discovery
-- `mitre.attack:T1422` — System Network Configuration Discovery
-- `mitre.attack:T1422.001` — Internet Connection Discovery
-- `mitre.attack:T1422.002` — Wi-Fi Discovery
-- `mitre.attack:T1423` — Network Service Scanning
-- `mitre.attack:T1424` — Process Discovery
-- `mitre.attack:T1426` — System Information Discovery
-- `mitre.attack:T1428` — Exploitation of Remote Services
-- `mitre.attack:T1429` — Audio Capture
-- `mitre.attack:T1430` — Location Tracking
-- `mitre.attack:T1430.001` — Remote Device Management Services
-- `mitre.attack:T1430.002` — Impersonate SS7 Nodes
-- `mitre.attack:T1437` — Application Layer Protocol
-- `mitre.attack:T1437.001` — Web Protocols
-- `mitre.attack:T1451` — SIM Card Swap
-- `mitre.attack:T1453` — Abuse Accessibility Features
-- `mitre.attack:T1456` — Drive-By Compromise
-- `mitre.attack:T1458` — Replication Through Removable Media
-- `mitre.attack:T1461` — Lockscreen Bypass
-- `mitre.attack:T1464` — Network Denial of Service
-- `mitre.attack:T1471` — Data Encrypted for Impact
-- `mitre.attack:T1474` — Supply Chain Compromise
-- `mitre.attack:T1474.001` — Compromise Software Dependencies and Development Tools
-- `mitre.attack:T1474.002` — Compromise Hardware Supply Chain
-- `mitre.attack:T1474.003` — Compromise Software Supply Chain
-- `mitre.attack:T1480` — Execution Guardrails
-- `mitre.attack:T1480.001` — Environmental Keying
-- `mitre.attack:T1480.002` — Mutual Exclusion
-- `mitre.attack:T1481` — Web Service
-- `mitre.attack:T1481.001` — Dead Drop Resolver
-- `mitre.attack:T1481.002` — Bidirectional Communication
-- `mitre.attack:T1481.003` — One-Way Communication
-- `mitre.attack:T1482` — Domain Trust Discovery
-- `mitre.attack:T1484` — Domain or Tenant Policy Modification
-- `mitre.attack:T1484.001` — Group Policy Modification
-- `mitre.attack:T1484.002` — Trust Modification
-- `mitre.attack:T1485` — Data Destruction
-- `mitre.attack:T1485.001` — Lifecycle-Triggered Deletion
-- `mitre.attack:T1486` — Data Encrypted for Impact
-- `mitre.attack:T1489` — Service Stop
-- `mitre.attack:T1490` — Inhibit System Recovery
-- `mitre.attack:T1491` — Defacement
-- `mitre.attack:T1491.001` — Internal Defacement
-- `mitre.attack:T1491.002` — External Defacement
-- `mitre.attack:T1495` — Firmware Corruption
-- `mitre.attack:T1496` — Resource Hijacking
-- `mitre.attack:T1496.001` — Compute Hijacking
-- `mitre.attack:T1496.002` — Bandwidth Hijacking
-- `mitre.attack:T1496.003` — SMS Pumping
-- `mitre.attack:T1496.004` — Cloud Service Hijacking
-- `mitre.attack:T1497` — Virtualization/Sandbox Evasion
-- `mitre.attack:T1497.001` — System Checks
-- `mitre.attack:T1497.002` — User Activity Based Checks
-- `mitre.attack:T1497.003` — Time Based Checks
-- `mitre.attack:T1498` — Network Denial of Service
-- `mitre.attack:T1498.001` — Direct Network Flood
-- `mitre.attack:T1498.002` — Reflection Amplification
-- `mitre.attack:T1499` — Endpoint Denial of Service
-- `mitre.attack:T1499.001` — OS Exhaustion Flood
-- `mitre.attack:T1499.002` — Service Exhaustion Flood
-- `mitre.attack:T1499.003` — Application Exhaustion Flood
-- `mitre.attack:T1499.004` — Application or System Exploitation
-- `mitre.attack:T1505` — Server Software Component
-- `mitre.attack:T1505.001` — SQL Stored Procedures
-- `mitre.attack:T1505.002` — Transport Agent
-- `mitre.attack:T1505.003` — Web Shell
-- `mitre.attack:T1505.004` — IIS Components
-- `mitre.attack:T1505.005` — Terminal Services DLL
-- `mitre.attack:T1505.006` — vSphere Installation Bundles
-- `mitre.attack:T1509` — Non-Standard Port
-- `mitre.attack:T1512` — Video Capture
-- `mitre.attack:T1513` — Screen Capture
-- `mitre.attack:T1516` — Input Injection
-- `mitre.attack:T1517` — Access Notifications
-- `mitre.attack:T1518` — Software Discovery
-- `mitre.attack:T1518.001` — Security Software Discovery
-- `mitre.attack:T1518.002` — Backup Software Discovery
-- `mitre.attack:T1521` — Encrypted Channel
-- `mitre.attack:T1521.001` — Symmetric Cryptography
-- `mitre.attack:T1521.002` — Asymmetric Cryptography
-- `mitre.attack:T1521.003` — SSL Pinning
-- `mitre.attack:T1525` — Implant Internal Image
-- `mitre.attack:T1526` — Cloud Service Discovery
-- `mitre.attack:T1528` — Steal Application Access Token
-- `mitre.attack:T1529` — System Shutdown/Reboot
-- `mitre.attack:T1530` — Data from Cloud Storage
-- `mitre.attack:T1531` — Account Access Removal
-- `mitre.attack:T1532` — Archive Collected Data
-- `mitre.attack:T1533` — Data from Local System
-- `mitre.attack:T1534` — Internal Spearphishing
-- `mitre.attack:T1535` — Unused/Unsupported Cloud Regions
-- `mitre.attack:T1537` — Transfer Data to Cloud Account
-- `mitre.attack:T1538` — Cloud Service Dashboard
-- `mitre.attack:T1539` — Steal Web Session Cookie
-- `mitre.attack:T1541` — Foreground Persistence
-- `mitre.attack:T1542` — Pre-OS Boot
-- `mitre.attack:T1542.001` — System Firmware
-- `mitre.attack:T1542.002` — Component Firmware
-- `mitre.attack:T1542.003` — Bootkit
-- `mitre.attack:T1542.004` — ROMMONkit
-- `mitre.attack:T1542.005` — TFTP Boot
-- `mitre.attack:T1543` — Create or Modify System Process
-- `mitre.attack:T1543.001` — Launch Agent
-- `mitre.attack:T1543.002` — Systemd Service
-- `mitre.attack:T1543.003` — Windows Service
-- `mitre.attack:T1543.004` — Launch Daemon
-- `mitre.attack:T1543.005` — Container Service
-- `mitre.attack:T1544` — Ingress Tool Transfer
-- `mitre.attack:T1546` — Event Triggered Execution
-- `mitre.attack:T1546.001` — Change Default File Association
-- `mitre.attack:T1546.002` — Screensaver
-- `mitre.attack:T1546.003` — Windows Management Instrumentation Event Subscription
-- `mitre.attack:T1546.004` — Unix Shell Configuration Modification
-- `mitre.attack:T1546.005` — Trap
-- `mitre.attack:T1546.006` — LC_LOAD_DYLIB Addition
-- `mitre.attack:T1546.007` — Netsh Helper DLL
-- `mitre.attack:T1546.008` — Accessibility Features
-- `mitre.attack:T1546.009` — AppCert DLLs
-- `mitre.attack:T1546.010` — AppInit DLLs
-- `mitre.attack:T1546.011` — Application Shimming
-- `mitre.attack:T1546.012` — Image File Execution Options Injection
-- `mitre.attack:T1546.013` — PowerShell Profile
-- `mitre.attack:T1546.014` — Emond
-- `mitre.attack:T1546.015` — Component Object Model Hijacking
-- `mitre.attack:T1546.016` — Installer Packages
-- `mitre.attack:T1546.017` — Udev Rules
-- `mitre.attack:T1546.018` — Python Startup Hooks
-- `mitre.attack:T1547` — Boot or Logon Autostart Execution
-- `mitre.attack:T1547.001` — Registry Run Keys / Startup Folder
-- `mitre.attack:T1547.002` — Authentication Package
-- `mitre.attack:T1547.003` — Time Providers
-- `mitre.attack:T1547.004` — Winlogon Helper DLL
-- `mitre.attack:T1547.005` — Security Support Provider
-- `mitre.attack:T1547.006` — Kernel Modules and Extensions
-- `mitre.attack:T1547.007` — Re-opened Applications
-- `mitre.attack:T1547.008` — LSASS Driver
-- `mitre.attack:T1547.009` — Shortcut Modification
-- `mitre.attack:T1547.010` — Port Monitors
-- `mitre.attack:T1547.012` — Print Processors
-- `mitre.attack:T1547.013` — XDG Autostart Entries
-- `mitre.attack:T1547.014` — Active Setup
-- `mitre.attack:T1547.015` — Login Items
-- `mitre.attack:T1548` — Abuse Elevation Control Mechanism
-- `mitre.attack:T1548.001` — Setuid and Setgid
-- `mitre.attack:T1548.002` — Bypass User Account Control
-- `mitre.attack:T1548.003` — Sudo and Sudo Caching
-- `mitre.attack:T1548.004` — Elevated Execution with Prompt
-- `mitre.attack:T1548.005` — Temporary Elevated Cloud Access
-- `mitre.attack:T1548.006` — TCC Manipulation
-- `mitre.attack:T1550` — Use Alternate Authentication Material
-- `mitre.attack:T1550.001` — Application Access Token
-- `mitre.attack:T1550.002` — Pass the Hash
-- `mitre.attack:T1550.003` — Pass the Ticket
-- `mitre.attack:T1550.004` — Web Session Cookie
-- `mitre.attack:T1552` — Unsecured Credentials
-- `mitre.attack:T1552.001` — Credentials In Files
-- `mitre.attack:T1552.002` — Credentials in Registry
-- `mitre.attack:T1552.003` — Shell History
-- `mitre.attack:T1552.004` — Private Keys
-- `mitre.attack:T1552.005` — Cloud Instance Metadata API
-- `mitre.attack:T1552.006` — Group Policy Preferences
-- `mitre.attack:T1552.007` — Container API
-- `mitre.attack:T1552.008` — Chat Messages
-- `mitre.attack:T1553` — Subvert Trust Controls
-- `mitre.attack:T1553.001` — Gatekeeper Bypass
-- `mitre.attack:T1553.002` — Code Signing
-- `mitre.attack:T1553.003` — SIP and Trust Provider Hijacking
-- `mitre.attack:T1553.004` — Install Root Certificate
-- `mitre.attack:T1553.005` — Mark-of-the-Web Bypass
-- `mitre.attack:T1553.006` — Code Signing Policy Modification
-- `mitre.attack:T1554` — Compromise Host Software Binary
-- `mitre.attack:T1555` — Credentials from Password Stores
-- `mitre.attack:T1555.001` — Keychain
-- `mitre.attack:T1555.002` — Securityd Memory
-- `mitre.attack:T1555.003` — Credentials from Web Browsers
-- `mitre.attack:T1555.004` — Windows Credential Manager
-- `mitre.attack:T1555.005` — Password Managers
-- `mitre.attack:T1555.006` — Cloud Secrets Management Stores
-- `mitre.attack:T1556` — Modify Authentication Process
-- `mitre.attack:T1556.001` — Domain Controller Authentication
-- `mitre.attack:T1556.002` — Password Filter DLL
-- `mitre.attack:T1556.003` — Pluggable Authentication Modules
-- `mitre.attack:T1556.004` — Network Device Authentication
-- `mitre.attack:T1556.005` — Reversible Encryption
-- `mitre.attack:T1556.006` — Multi-Factor Authentication
-- `mitre.attack:T1556.007` — Hybrid Identity
-- `mitre.attack:T1556.008` — Network Provider DLL
-- `mitre.attack:T1556.009` — Conditional Access Policies
-- `mitre.attack:T1557` — Adversary-in-the-Middle
-- `mitre.attack:T1557.001` — LLMNR/NBT-NS Poisoning and SMB Relay
-- `mitre.attack:T1557.002` — ARP Cache Poisoning
-- `mitre.attack:T1557.003` — DHCP Spoofing
-- `mitre.attack:T1557.004` — Evil Twin
-- `mitre.attack:T1558` — Steal or Forge Kerberos Tickets
-- `mitre.attack:T1558.001` — Golden Ticket
-- `mitre.attack:T1558.002` — Silver Ticket
-- `mitre.attack:T1558.003` — Kerberoasting
-- `mitre.attack:T1558.004` — AS-REP Roasting
-- `mitre.attack:T1558.005` — Ccache Files
-- `mitre.attack:T1559` — Inter-Process Communication
-- `mitre.attack:T1559.001` — Component Object Model
-- `mitre.attack:T1559.002` — Dynamic Data Exchange
-- `mitre.attack:T1559.003` — XPC Services
-- `mitre.attack:T1560` — Archive Collected Data
-- `mitre.attack:T1560.001` — Archive via Utility
-- `mitre.attack:T1560.002` — Archive via Library
-- `mitre.attack:T1560.003` — Archive via Custom Method
-- `mitre.attack:T1561` — Disk Wipe
-- `mitre.attack:T1561.001` — Disk Content Wipe
-- `mitre.attack:T1561.002` — Disk Structure Wipe
-- `mitre.attack:T1562` — Impair Defenses
-- `mitre.attack:T1562.001` — Disable or Modify Tools
-- `mitre.attack:T1562.002` — Disable Windows Event Logging
-- `mitre.attack:T1562.003` — Impair Command History Logging
-- `mitre.attack:T1562.004` — Disable or Modify System Firewall
-- `mitre.attack:T1562.006` — Indicator Blocking
-- `mitre.attack:T1562.007` — Disable or Modify Cloud Firewall
-- `mitre.attack:T1562.008` — Disable or Modify Cloud Logs
-- `mitre.attack:T1562.009` — Safe Mode Boot
-- `mitre.attack:T1562.010` — Downgrade Attack
-- `mitre.attack:T1562.011` — Spoof Security Alerting
-- `mitre.attack:T1562.012` — Disable or Modify Linux Audit System
-- `mitre.attack:T1562.013` — Disable or Modify Network Device Firewall
-- `mitre.attack:T1563` — Remote Service Session Hijacking
-- `mitre.attack:T1563.001` — SSH Hijacking
-- `mitre.attack:T1563.002` — RDP Hijacking
-- `mitre.attack:T1564` — Hide Artifacts
-- `mitre.attack:T1564.001` — Hidden Files and Directories
-- `mitre.attack:T1564.002` — Hidden Users
-- `mitre.attack:T1564.003` — Hidden Window
-- `mitre.attack:T1564.004` — NTFS File Attributes
-- `mitre.attack:T1564.005` — Hidden File System
-- `mitre.attack:T1564.006` — Run Virtual Instance
-- `mitre.attack:T1564.007` — VBA Stomping
-- `mitre.attack:T1564.008` — Email Hiding Rules
-- `mitre.attack:T1564.009` — Resource Forking
-- `mitre.attack:T1564.010` — Process Argument Spoofing
-- `mitre.attack:T1564.011` — Ignore Process Interrupts
-- `mitre.attack:T1564.012` — File/Path Exclusions
-- `mitre.attack:T1564.013` — Bind Mounts
-- `mitre.attack:T1564.014` — Extended Attributes
-- `mitre.attack:T1565` — Data Manipulation
-- `mitre.attack:T1565.001` — Stored Data Manipulation
-- `mitre.attack:T1565.002` — Transmitted Data Manipulation
-- `mitre.attack:T1565.003` — Runtime Data Manipulation
-- `mitre.attack:T1566` — Phishing
-- `mitre.attack:T1566.001` — Spearphishing Attachment
-- `mitre.attack:T1566.002` — Spearphishing Link
-- `mitre.attack:T1566.003` — Spearphishing via Service
-- `mitre.attack:T1566.004` — Spearphishing Voice
-- `mitre.attack:T1567` — Exfiltration Over Web Service
-- `mitre.attack:T1567.001` — Exfiltration to Code Repository
-- `mitre.attack:T1567.002` — Exfiltration to Cloud Storage
-- `mitre.attack:T1567.003` — Exfiltration to Text Storage Sites
-- `mitre.attack:T1567.004` — Exfiltration Over Webhook
-- `mitre.attack:T1568` — Dynamic Resolution
-- `mitre.attack:T1568.001` — Fast Flux DNS
-- `mitre.attack:T1568.002` — Domain Generation Algorithms
-- `mitre.attack:T1568.003` — DNS Calculation
-- `mitre.attack:T1569` — System Services
-- `mitre.attack:T1569.001` — Launchctl
-- `mitre.attack:T1569.002` — Service Execution
-- `mitre.attack:T1569.003` — Systemctl
-- `mitre.attack:T1570` — Lateral Tool Transfer
-- `mitre.attack:T1571` — Non-Standard Port
-- `mitre.attack:T1572` — Protocol Tunneling
-- `mitre.attack:T1573` — Encrypted Channel
-- `mitre.attack:T1573.001` — Symmetric Cryptography
-- `mitre.attack:T1573.002` — Asymmetric Cryptography
-- `mitre.attack:T1574` — Hijack Execution Flow
-- `mitre.attack:T1574.001` — DLL
-- `mitre.attack:T1574.004` — Dylib Hijacking
-- `mitre.attack:T1574.005` — Executable Installer File Permissions Weakness
-- `mitre.attack:T1574.006` — Dynamic Linker Hijacking
-- `mitre.attack:T1574.007` — Path Interception by PATH Environment Variable
-- `mitre.attack:T1574.008` — Path Interception by Search Order Hijacking
-- `mitre.attack:T1574.009` — Path Interception by Unquoted Path
-- `mitre.attack:T1574.010` — Services File Permissions Weakness
-- `mitre.attack:T1574.011` — Services Registry Permissions Weakness
-- `mitre.attack:T1574.012` — COR_PROFILER
-- `mitre.attack:T1574.013` — KernelCallbackTable
-- `mitre.attack:T1574.014` — AppDomainManager
-- `mitre.attack:T1575` — Native API
-- `mitre.attack:T1577` — Compromise Application Executable
-- `mitre.attack:T1578` — Modify Cloud Compute Infrastructure
-- `mitre.attack:T1578.001` — Create Snapshot
-- `mitre.attack:T1578.002` — Create Cloud Instance
-- `mitre.attack:T1578.003` — Delete Cloud Instance
-- `mitre.attack:T1578.004` — Revert Cloud Instance
-- `mitre.attack:T1578.005` — Modify Cloud Compute Configurations
-- `mitre.attack:T1580` — Cloud Infrastructure Discovery
-- `mitre.attack:T1582` — SMS Control
-- `mitre.attack:T1583` — Acquire Infrastructure
-- `mitre.attack:T1583.001` — Domains
-- `mitre.attack:T1583.002` — DNS Server
-- `mitre.attack:T1583.003` — Virtual Private Server
-- `mitre.attack:T1583.004` — Server
-- `mitre.attack:T1583.005` — Botnet
-- `mitre.attack:T1583.006` — Web Services
-- `mitre.attack:T1583.007` — Serverless
-- `mitre.attack:T1583.008` — Malvertising
-- `mitre.attack:T1584` — Compromise Infrastructure
-- `mitre.attack:T1584.001` — Domains
-- `mitre.attack:T1584.002` — DNS Server
-- `mitre.attack:T1584.003` — Virtual Private Server
-- `mitre.attack:T1584.004` — Server
-- `mitre.attack:T1584.005` — Botnet
-- `mitre.attack:T1584.006` — Web Services
-- `mitre.attack:T1584.007` — Serverless
-- `mitre.attack:T1584.008` — Network Devices
-- `mitre.attack:T1585` — Establish Accounts
-- `mitre.attack:T1585.001` — Social Media Accounts
-- `mitre.attack:T1585.002` — Email Accounts
-- `mitre.attack:T1585.003` — Cloud Accounts
-- `mitre.attack:T1586` — Compromise Accounts
-- `mitre.attack:T1586.001` — Social Media Accounts
-- `mitre.attack:T1586.002` — Email Accounts
-- `mitre.attack:T1586.003` — Cloud Accounts
-- `mitre.attack:T1587` — Develop Capabilities
-- `mitre.attack:T1587.001` — Malware
-- `mitre.attack:T1587.002` — Code Signing Certificates
-- `mitre.attack:T1587.003` — Digital Certificates
-- `mitre.attack:T1587.004` — Exploits
-- `mitre.attack:T1588` — Obtain Capabilities
-- `mitre.attack:T1588.001` — Malware
-- `mitre.attack:T1588.002` — Tool
-- `mitre.attack:T1588.003` — Code Signing Certificates
-- `mitre.attack:T1588.004` — Digital Certificates
-- `mitre.attack:T1588.005` — Exploits
-- `mitre.attack:T1588.006` — Vulnerabilities
-- `mitre.attack:T1588.007` — Artificial Intelligence
-- `mitre.attack:T1589` — Gather Victim Identity Information
-- `mitre.attack:T1589.001` — Credentials
-- `mitre.attack:T1589.002` — Email Addresses
-- `mitre.attack:T1589.003` — Employee Names
-- `mitre.attack:T1590` — Gather Victim Network Information
-- `mitre.attack:T1590.001` — Domain Properties
-- `mitre.attack:T1590.002` — DNS
-- `mitre.attack:T1590.003` — Network Trust Dependencies
-- `mitre.attack:T1590.004` — Network Topology
-- `mitre.attack:T1590.005` — IP Addresses
-- `mitre.attack:T1590.006` — Network Security Appliances
-- `mitre.attack:T1591` — Gather Victim Org Information
-- `mitre.attack:T1591.001` — Determine Physical Locations
-- `mitre.attack:T1591.002` — Business Relationships
-- `mitre.attack:T1591.003` — Identify Business Tempo
-- `mitre.attack:T1591.004` — Identify Roles
-- `mitre.attack:T1592` — Gather Victim Host Information
-- `mitre.attack:T1592.001` — Hardware
-- `mitre.attack:T1592.002` — Software
-- `mitre.attack:T1592.003` — Firmware
-- `mitre.attack:T1592.004` — Client Configurations
-- `mitre.attack:T1593` — Search Open Websites/Domains
-- `mitre.attack:T1593.001` — Social Media
-- `mitre.attack:T1593.002` — Search Engines
-- `mitre.attack:T1593.003` — Code Repositories
-- `mitre.attack:T1594` — Search Victim-Owned Websites
-- `mitre.attack:T1595` — Active Scanning
-- `mitre.attack:T1595.001` — Scanning IP Blocks
-- `mitre.attack:T1595.002` — Vulnerability Scanning
-- `mitre.attack:T1595.003` — Wordlist Scanning
-- `mitre.attack:T1596` — Search Open Technical Databases
-- `mitre.attack:T1596.001` — DNS/Passive DNS
-- `mitre.attack:T1596.002` — WHOIS
-- `mitre.attack:T1596.003` — Digital Certificates
-- `mitre.attack:T1596.004` — CDNs
-- `mitre.attack:T1596.005` — Scan Databases
-- `mitre.attack:T1597` — Search Closed Sources
-- `mitre.attack:T1597.001` — Threat Intel Vendors
-- `mitre.attack:T1597.002` — Purchase Technical Data
-- `mitre.attack:T1598` — Phishing for Information
-- `mitre.attack:T1598.001` — Spearphishing Service
-- `mitre.attack:T1598.002` — Spearphishing Attachment
-- `mitre.attack:T1598.003` — Spearphishing Link
-- `mitre.attack:T1598.004` — Spearphishing Voice
-- `mitre.attack:T1599` — Network Boundary Bridging
-- `mitre.attack:T1599.001` — Network Address Translation Traversal
-- `mitre.attack:T1600` — Weaken Encryption
-- `mitre.attack:T1600.001` — Reduce Key Space
-- `mitre.attack:T1600.002` — Disable Crypto Hardware
-- `mitre.attack:T1601` — Modify System Image
-- `mitre.attack:T1601.001` — Patch System Image
-- `mitre.attack:T1601.002` — Downgrade System Image
-- `mitre.attack:T1602` — Data from Configuration Repository
-- `mitre.attack:T1602.001` — SNMP (MIB Dump)
-- `mitre.attack:T1602.002` — Network Device Configuration Dump
-- `mitre.attack:T1603` — Scheduled Task/Job
-- `mitre.attack:T1604` — Proxy Through Victim
-- `mitre.attack:T1606` — Forge Web Credentials
-- `mitre.attack:T1606.001` — Web Cookies
-- `mitre.attack:T1606.002` — SAML Tokens
-- `mitre.attack:T1608` — Stage Capabilities
-- `mitre.attack:T1608.001` — Upload Malware
-- `mitre.attack:T1608.002` — Upload Tool
-- `mitre.attack:T1608.003` — Install Digital Certificate
-- `mitre.attack:T1608.004` — Drive-by Target
-- `mitre.attack:T1608.005` — Link Target
-- `mitre.attack:T1608.006` — SEO Poisoning
-- `mitre.attack:T1609` — Container Administration Command
-- `mitre.attack:T1610` — Deploy Container
-- `mitre.attack:T1611` — Escape to Host
-- `mitre.attack:T1612` — Build Image on Host
-- `mitre.attack:T1613` — Container and Resource Discovery
-- `mitre.attack:T1614` — System Location Discovery
-- `mitre.attack:T1614.001` — System Language Discovery
-- `mitre.attack:T1615` — Group Policy Discovery
-- `mitre.attack:T1616` — Call Control
-- `mitre.attack:T1617` — Hooking
-- `mitre.attack:T1619` — Cloud Storage Object Discovery
-- `mitre.attack:T1620` — Reflective Code Loading
-- `mitre.attack:T1621` — Multi-Factor Authentication Request Generation
-- `mitre.attack:T1622` — Debugger Evasion
-- `mitre.attack:T1623` — Command and Scripting Interpreter
-- `mitre.attack:T1623.001` — Unix Shell
-- `mitre.attack:T1624` — Event Triggered Execution
-- `mitre.attack:T1624.001` — Broadcast Receivers
-- `mitre.attack:T1625` — Hijack Execution Flow
-- `mitre.attack:T1625.001` — System Runtime API Hijacking
-- `mitre.attack:T1626` — Abuse Elevation Control Mechanism
-- `mitre.attack:T1626.001` — Device Administrator Permissions
-- `mitre.attack:T1627` — Execution Guardrails
-- `mitre.attack:T1627.001` — Geofencing
-- `mitre.attack:T1628` — Hide Artifacts
-- `mitre.attack:T1628.001` — Suppress Application Icon
-- `mitre.attack:T1628.002` — User Evasion
-- `mitre.attack:T1628.003` — Conceal Multimedia Files
-- `mitre.attack:T1629` — Impair Defenses
-- `mitre.attack:T1629.001` — Prevent Application Removal
-- `mitre.attack:T1629.002` — Device Lockout
-- `mitre.attack:T1629.003` — Disable or Modify Tools
-- `mitre.attack:T1630` — Indicator Removal on Host
-- `mitre.attack:T1630.001` — Uninstall Malicious Application
-- `mitre.attack:T1630.002` — File Deletion
-- `mitre.attack:T1630.003` — Disguise Root/Jailbreak Indicators
-- `mitre.attack:T1631` — Process Injection
-- `mitre.attack:T1631.001` — Ptrace System Calls
-- `mitre.attack:T1632` — Subvert Trust Controls
-- `mitre.attack:T1632.001` — Code Signing Policy Modification
-- `mitre.attack:T1633` — Virtualization/Sandbox Evasion
-- `mitre.attack:T1633.001` — System Checks
-- `mitre.attack:T1634` — Credentials from Password Store
-- `mitre.attack:T1634.001` — Keychain
-- `mitre.attack:T1635` — Steal Application Access Token
-- `mitre.attack:T1635.001` — URI Hijacking
-- `mitre.attack:T1636` — Protected User Data
-- `mitre.attack:T1636.001` — Calendar Entries
-- `mitre.attack:T1636.002` — Call Log
-- `mitre.attack:T1636.003` — Contact List
-- `mitre.attack:T1636.004` — SMS Messages
-- `mitre.attack:T1636.005` — Accounts
-- `mitre.attack:T1637` — Dynamic Resolution
-- `mitre.attack:T1637.001` — Domain Generation Algorithms
-- `mitre.attack:T1638` — Adversary-in-the-Middle
-- `mitre.attack:T1639` — Exfiltration Over Alternative Protocol
-- `mitre.attack:T1639.001` — Exfiltration Over Unencrypted Non-C2 Protocol
-- `mitre.attack:T1640` — Account Access Removal
-- `mitre.attack:T1641` — Data Manipulation
-- `mitre.attack:T1641.001` — Transmitted Data Manipulation
-- `mitre.attack:T1642` — Endpoint Denial of Service
-- `mitre.attack:T1643` — Generate Traffic from Victim
-- `mitre.attack:T1644` — Out of Band Data
-- `mitre.attack:T1645` — Compromise Client Software Binary
-- `mitre.attack:T1646` — Exfiltration Over C2 Channel
-- `mitre.attack:T1647` — Plist File Modification
-- `mitre.attack:T1648` — Serverless Execution
-- `mitre.attack:T1649` — Steal or Forge Authentication Certificates
-- `mitre.attack:T1650` — Acquire Access
-- `mitre.attack:T1651` — Cloud Administration Command
-- `mitre.attack:T1652` — Device Driver Discovery
-- `mitre.attack:T1653` — Power Settings
-- `mitre.attack:T1654` — Log Enumeration
-- `mitre.attack:T1655` — Masquerading
-- `mitre.attack:T1655.001` — Match Legitimate Name or Location
-- `mitre.attack:T1656` — Impersonation
-- `mitre.attack:T1657` — Financial Theft
-- `mitre.attack:T1658` — Exploitation for Client Execution
-- `mitre.attack:T1659` — Content Injection
-- `mitre.attack:T1660` — Phishing
-- `mitre.attack:T1661` — Application Versioning
-- `mitre.attack:T1662` — Data Destruction
-- `mitre.attack:T1663` — Remote Access Software
-- `mitre.attack:T1664` — Exploitation for Initial Access
-- `mitre.attack:T1665` — Hide Infrastructure
-- `mitre.attack:T1666` — Modify Cloud Resource Hierarchy
-- `mitre.attack:T1667` — Email Bombing
-- `mitre.attack:T1668` — Exclusive Control
-- `mitre.attack:T1669` — Wi-Fi Networks
-- `mitre.attack:T1670` — Virtualization Solution
-- `mitre.attack:T1671` — Cloud Application Integration
-- `mitre.attack:T1672` — Email Spoofing
-- `mitre.attack:T1673` — Virtual Machine Discovery
-- `mitre.attack:T1674` — Input Injection
-- `mitre.attack:T1675` — ESXi Administration Command
-- `mitre.attack:T1676` — Linked Devices
-- `mitre.attack:T1677` — Poisoned Pipeline Execution
-- `mitre.attack:T1678` — Delay Execution
-- `mitre.attack:T1679` — Selective Exclusion
-- `mitre.attack:T1680` — Local Storage Discovery
-- `mitre.attack:T1681` — Search Threat Vendor Data
+- `mitre.attack:Collection.T0801` — Monitor Process State
+- `mitre.attack:Collection.T0802` — Automated Collection
+- `mitre.attack:Collection.T0811` — Data from Information Repositories
+- `mitre.attack:Collection.T0830` — Adversary-in-the-Middle
+- `mitre.attack:Collection.T0845` — Program Upload
+- `mitre.attack:Collection.T0852` — Screen Capture
+- `mitre.attack:Collection.T0861` — Point & Tag Identification
+- `mitre.attack:Collection.T0868` — Detect Operating Mode
+- `mitre.attack:Collection.T0877` — I/O Image
+- `mitre.attack:Collection.T0887` — Wireless Sniffing
+- `mitre.attack:Collection.T0893` — Data from Local System
+- `mitre.attack:Collection.T1005` — Data from Local System
+- `mitre.attack:Collection.T1025` — Data from Removable Media
+- `mitre.attack:Collection.T1039` — Data from Network Shared Drive
+- `mitre.attack:Collection.T1056` — Input Capture
+- `mitre.attack:Collection.T1056.001` — Keylogging
+- `mitre.attack:Collection.T1056.002` — GUI Input Capture
+- `mitre.attack:Collection.T1056.003` — Web Portal Capture
+- `mitre.attack:Collection.T1056.004` — Credential API Hooking
+- `mitre.attack:Collection.T1074` — Data Staged
+- `mitre.attack:Collection.T1074.001` — Local Data Staging
+- `mitre.attack:Collection.T1074.002` — Remote Data Staging
+- `mitre.attack:Collection.T1113` — Screen Capture
+- `mitre.attack:Collection.T1114` — Email Collection
+- `mitre.attack:Collection.T1114.001` — Local Email Collection
+- `mitre.attack:Collection.T1114.002` — Remote Email Collection
+- `mitre.attack:Collection.T1114.003` — Email Forwarding Rule
+- `mitre.attack:Collection.T1115` — Clipboard Data
+- `mitre.attack:Collection.T1119` — Automated Collection
+- `mitre.attack:Collection.T1123` — Audio Capture
+- `mitre.attack:Collection.T1125` — Video Capture
+- `mitre.attack:Collection.T1185` — Browser Session Hijacking
+- `mitre.attack:Collection.T1213` — Data from Information Repositories
+- `mitre.attack:Collection.T1213.001` — Confluence
+- `mitre.attack:Collection.T1213.002` — Sharepoint
+- `mitre.attack:Collection.T1213.003` — Code Repositories
+- `mitre.attack:Collection.T1213.004` — Customer Relationship Management Software
+- `mitre.attack:Collection.T1213.005` — Messaging Applications
+- `mitre.attack:Collection.T1213.006` — Databases
+- `mitre.attack:Collection.T1409` — Stored Application Data
+- `mitre.attack:Collection.T1414` — Clipboard Data
+- `mitre.attack:Collection.T1417` — Input Capture
+- `mitre.attack:Collection.T1417.001` — Keylogging
+- `mitre.attack:Collection.T1417.002` — GUI Input Capture
+- `mitre.attack:Collection.T1429` — Audio Capture
+- `mitre.attack:Collection.T1430` — Location Tracking
+- `mitre.attack:Collection.T1430.001` — Remote Device Management Services
+- `mitre.attack:Collection.T1430.002` — Impersonate SS7 Nodes
+- `mitre.attack:Collection.T1453` — Abuse Accessibility Features
+- `mitre.attack:Collection.T1512` — Video Capture
+- `mitre.attack:Collection.T1513` — Screen Capture
+- `mitre.attack:Collection.T1517` — Access Notifications
+- `mitre.attack:Collection.T1530` — Data from Cloud Storage
+- `mitre.attack:Collection.T1532` — Archive Collected Data
+- `mitre.attack:Collection.T1533` — Data from Local System
+- `mitre.attack:Collection.T1557` — Adversary-in-the-Middle
+- `mitre.attack:Collection.T1557.001` — LLMNR/NBT-NS Poisoning and SMB Relay
+- `mitre.attack:Collection.T1557.002` — ARP Cache Poisoning
+- `mitre.attack:Collection.T1557.003` — DHCP Spoofing
+- `mitre.attack:Collection.T1557.004` — Evil Twin
+- `mitre.attack:Collection.T1560` — Archive Collected Data
+- `mitre.attack:Collection.T1560.001` — Archive via Utility
+- `mitre.attack:Collection.T1560.002` — Archive via Library
+- `mitre.attack:Collection.T1560.003` — Archive via Custom Method
+- `mitre.attack:Collection.T1602` — Data from Configuration Repository
+- `mitre.attack:Collection.T1602.001` — SNMP (MIB Dump)
+- `mitre.attack:Collection.T1602.002` — Network Device Configuration Dump
+- `mitre.attack:Collection.T1616` — Call Control
+- `mitre.attack:Collection.T1636` — Protected User Data
+- `mitre.attack:Collection.T1636.001` — Calendar Entries
+- `mitre.attack:Collection.T1636.002` — Call Log
+- `mitre.attack:Collection.T1636.003` — Contact List
+- `mitre.attack:Collection.T1636.004` — SMS Messages
+- `mitre.attack:Collection.T1636.005` — Accounts
+- `mitre.attack:Collection.T1638` — Adversary-in-the-Middle
+- `mitre.attack:Collection.T1676` — Linked Devices
+- `mitre.attack:CommandAndControl.T0869` — Standard Application Layer Protocol
+- `mitre.attack:CommandAndControl.T0884` — Connection Proxy
+- `mitre.attack:CommandAndControl.T0885` — Commonly Used Port
+- `mitre.attack:CommandAndControl.T1001` — Data Obfuscation
+- `mitre.attack:CommandAndControl.T1001.001` — Junk Data
+- `mitre.attack:CommandAndControl.T1001.002` — Steganography
+- `mitre.attack:CommandAndControl.T1001.003` — Protocol or Service Impersonation
+- `mitre.attack:CommandAndControl.T1008` — Fallback Channels
+- `mitre.attack:CommandAndControl.T1071` — Application Layer Protocol
+- `mitre.attack:CommandAndControl.T1071.001` — Web Protocols
+- `mitre.attack:CommandAndControl.T1071.002` — File Transfer Protocols
+- `mitre.attack:CommandAndControl.T1071.003` — Mail Protocols
+- `mitre.attack:CommandAndControl.T1071.004` — DNS
+- `mitre.attack:CommandAndControl.T1071.005` — Publish/Subscribe Protocols
+- `mitre.attack:CommandAndControl.T1090` — Proxy
+- `mitre.attack:CommandAndControl.T1090.001` — Internal Proxy
+- `mitre.attack:CommandAndControl.T1090.002` — External Proxy
+- `mitre.attack:CommandAndControl.T1090.003` — Multi-hop Proxy
+- `mitre.attack:CommandAndControl.T1090.004` — Domain Fronting
+- `mitre.attack:CommandAndControl.T1092` — Communication Through Removable Media
+- `mitre.attack:CommandAndControl.T1095` — Non-Application Layer Protocol
+- `mitre.attack:CommandAndControl.T1102` — Web Service
+- `mitre.attack:CommandAndControl.T1102.001` — Dead Drop Resolver
+- `mitre.attack:CommandAndControl.T1102.002` — Bidirectional Communication
+- `mitre.attack:CommandAndControl.T1102.003` — One-Way Communication
+- `mitre.attack:CommandAndControl.T1104` — Multi-Stage Channels
+- `mitre.attack:CommandAndControl.T1105` — Ingress Tool Transfer
+- `mitre.attack:CommandAndControl.T1132` — Data Encoding
+- `mitre.attack:CommandAndControl.T1132.001` — Standard Encoding
+- `mitre.attack:CommandAndControl.T1132.002` — Non-Standard Encoding
+- `mitre.attack:CommandAndControl.T1205` — Traffic Signaling
+- `mitre.attack:CommandAndControl.T1205.001` — Port Knocking
+- `mitre.attack:CommandAndControl.T1205.002` — Socket Filters
+- `mitre.attack:CommandAndControl.T1219` — Remote Access Tools
+- `mitre.attack:CommandAndControl.T1219.001` — IDE Tunneling
+- `mitre.attack:CommandAndControl.T1219.002` — Remote Desktop Software
+- `mitre.attack:CommandAndControl.T1219.003` — Remote Access Hardware
+- `mitre.attack:CommandAndControl.T1437` — Application Layer Protocol
+- `mitre.attack:CommandAndControl.T1437.001` — Web Protocols
+- `mitre.attack:CommandAndControl.T1481` — Web Service
+- `mitre.attack:CommandAndControl.T1481.001` — Dead Drop Resolver
+- `mitre.attack:CommandAndControl.T1481.002` — Bidirectional Communication
+- `mitre.attack:CommandAndControl.T1481.003` — One-Way Communication
+- `mitre.attack:CommandAndControl.T1509` — Non-Standard Port
+- `mitre.attack:CommandAndControl.T1521` — Encrypted Channel
+- `mitre.attack:CommandAndControl.T1521.001` — Symmetric Cryptography
+- `mitre.attack:CommandAndControl.T1521.002` — Asymmetric Cryptography
+- `mitre.attack:CommandAndControl.T1521.003` — SSL Pinning
+- `mitre.attack:CommandAndControl.T1544` — Ingress Tool Transfer
+- `mitre.attack:CommandAndControl.T1568` — Dynamic Resolution
+- `mitre.attack:CommandAndControl.T1568.001` — Fast Flux DNS
+- `mitre.attack:CommandAndControl.T1568.002` — Domain Generation Algorithms
+- `mitre.attack:CommandAndControl.T1568.003` — DNS Calculation
+- `mitre.attack:CommandAndControl.T1571` — Non-Standard Port
+- `mitre.attack:CommandAndControl.T1572` — Protocol Tunneling
+- `mitre.attack:CommandAndControl.T1573` — Encrypted Channel
+- `mitre.attack:CommandAndControl.T1573.001` — Symmetric Cryptography
+- `mitre.attack:CommandAndControl.T1573.002` — Asymmetric Cryptography
+- `mitre.attack:CommandAndControl.T1616` — Call Control
+- `mitre.attack:CommandAndControl.T1637` — Dynamic Resolution
+- `mitre.attack:CommandAndControl.T1637.001` — Domain Generation Algorithms
+- `mitre.attack:CommandAndControl.T1644` — Out of Band Data
+- `mitre.attack:CommandAndControl.T1659` — Content Injection
+- `mitre.attack:CommandAndControl.T1663` — Remote Access Software
+- `mitre.attack:CommandAndControl.T1665` — Hide Infrastructure
+- `mitre.attack:CredentialAccess.T1003` — OS Credential Dumping
+- `mitre.attack:CredentialAccess.T1003.001` — LSASS Memory
+- `mitre.attack:CredentialAccess.T1003.002` — Security Account Manager
+- `mitre.attack:CredentialAccess.T1003.003` — NTDS
+- `mitre.attack:CredentialAccess.T1003.004` — LSA Secrets
+- `mitre.attack:CredentialAccess.T1003.005` — Cached Domain Credentials
+- `mitre.attack:CredentialAccess.T1003.006` — DCSync
+- `mitre.attack:CredentialAccess.T1003.007` — Proc Filesystem
+- `mitre.attack:CredentialAccess.T1003.008` — /etc/passwd and /etc/shadow
+- `mitre.attack:CredentialAccess.T1040` — Network Sniffing
+- `mitre.attack:CredentialAccess.T1056` — Input Capture
+- `mitre.attack:CredentialAccess.T1056.001` — Keylogging
+- `mitre.attack:CredentialAccess.T1056.002` — GUI Input Capture
+- `mitre.attack:CredentialAccess.T1056.003` — Web Portal Capture
+- `mitre.attack:CredentialAccess.T1056.004` — Credential API Hooking
+- `mitre.attack:CredentialAccess.T1110` — Brute Force
+- `mitre.attack:CredentialAccess.T1110.001` — Password Guessing
+- `mitre.attack:CredentialAccess.T1110.002` — Password Cracking
+- `mitre.attack:CredentialAccess.T1110.003` — Password Spraying
+- `mitre.attack:CredentialAccess.T1110.004` — Credential Stuffing
+- `mitre.attack:CredentialAccess.T1111` — Multi-Factor Authentication Interception
+- `mitre.attack:CredentialAccess.T1187` — Forced Authentication
+- `mitre.attack:CredentialAccess.T1212` — Exploitation for Credential Access
+- `mitre.attack:CredentialAccess.T1414` — Clipboard Data
+- `mitre.attack:CredentialAccess.T1417` — Input Capture
+- `mitre.attack:CredentialAccess.T1417.001` — Keylogging
+- `mitre.attack:CredentialAccess.T1417.002` — GUI Input Capture
+- `mitre.attack:CredentialAccess.T1453` — Abuse Accessibility Features
+- `mitre.attack:CredentialAccess.T1517` — Access Notifications
+- `mitre.attack:CredentialAccess.T1528` — Steal Application Access Token
+- `mitre.attack:CredentialAccess.T1539` — Steal Web Session Cookie
+- `mitre.attack:CredentialAccess.T1552` — Unsecured Credentials
+- `mitre.attack:CredentialAccess.T1552.001` — Credentials In Files
+- `mitre.attack:CredentialAccess.T1552.002` — Credentials in Registry
+- `mitre.attack:CredentialAccess.T1552.003` — Shell History
+- `mitre.attack:CredentialAccess.T1552.004` — Private Keys
+- `mitre.attack:CredentialAccess.T1552.005` — Cloud Instance Metadata API
+- `mitre.attack:CredentialAccess.T1552.006` — Group Policy Preferences
+- `mitre.attack:CredentialAccess.T1552.007` — Container API
+- `mitre.attack:CredentialAccess.T1552.008` — Chat Messages
+- `mitre.attack:CredentialAccess.T1555` — Credentials from Password Stores
+- `mitre.attack:CredentialAccess.T1555.001` — Keychain
+- `mitre.attack:CredentialAccess.T1555.002` — Securityd Memory
+- `mitre.attack:CredentialAccess.T1555.003` — Credentials from Web Browsers
+- `mitre.attack:CredentialAccess.T1555.004` — Windows Credential Manager
+- `mitre.attack:CredentialAccess.T1555.005` — Password Managers
+- `mitre.attack:CredentialAccess.T1555.006` — Cloud Secrets Management Stores
+- `mitre.attack:CredentialAccess.T1556` — Modify Authentication Process
+- `mitre.attack:CredentialAccess.T1556.001` — Domain Controller Authentication
+- `mitre.attack:CredentialAccess.T1556.002` — Password Filter DLL
+- `mitre.attack:CredentialAccess.T1556.003` — Pluggable Authentication Modules
+- `mitre.attack:CredentialAccess.T1556.004` — Network Device Authentication
+- `mitre.attack:CredentialAccess.T1556.005` — Reversible Encryption
+- `mitre.attack:CredentialAccess.T1556.006` — Multi-Factor Authentication
+- `mitre.attack:CredentialAccess.T1556.007` — Hybrid Identity
+- `mitre.attack:CredentialAccess.T1556.008` — Network Provider DLL
+- `mitre.attack:CredentialAccess.T1556.009` — Conditional Access Policies
+- `mitre.attack:CredentialAccess.T1557` — Adversary-in-the-Middle
+- `mitre.attack:CredentialAccess.T1557.001` — LLMNR/NBT-NS Poisoning and SMB Relay
+- `mitre.attack:CredentialAccess.T1557.002` — ARP Cache Poisoning
+- `mitre.attack:CredentialAccess.T1557.003` — DHCP Spoofing
+- `mitre.attack:CredentialAccess.T1557.004` — Evil Twin
+- `mitre.attack:CredentialAccess.T1558` — Steal or Forge Kerberos Tickets
+- `mitre.attack:CredentialAccess.T1558.001` — Golden Ticket
+- `mitre.attack:CredentialAccess.T1558.002` — Silver Ticket
+- `mitre.attack:CredentialAccess.T1558.003` — Kerberoasting
+- `mitre.attack:CredentialAccess.T1558.004` — AS-REP Roasting
+- `mitre.attack:CredentialAccess.T1558.005` — Ccache Files
+- `mitre.attack:CredentialAccess.T1606` — Forge Web Credentials
+- `mitre.attack:CredentialAccess.T1606.001` — Web Cookies
+- `mitre.attack:CredentialAccess.T1606.002` — SAML Tokens
+- `mitre.attack:CredentialAccess.T1621` — Multi-Factor Authentication Request Generation
+- `mitre.attack:CredentialAccess.T1634` — Credentials from Password Store
+- `mitre.attack:CredentialAccess.T1634.001` — Keychain
+- `mitre.attack:CredentialAccess.T1635` — Steal Application Access Token
+- `mitre.attack:CredentialAccess.T1635.001` — URI Hijacking
+- `mitre.attack:CredentialAccess.T1649` — Steal or Forge Authentication Certificates
+- `mitre.attack:DefenseEvasion.T1006` — Direct Volume Access
+- `mitre.attack:DefenseEvasion.T1014` — Rootkit
+- `mitre.attack:DefenseEvasion.T1027` — Obfuscated Files or Information
+- `mitre.attack:DefenseEvasion.T1027.001` — Binary Padding
+- `mitre.attack:DefenseEvasion.T1027.002` — Software Packing
+- `mitre.attack:DefenseEvasion.T1027.003` — Steganography
+- `mitre.attack:DefenseEvasion.T1027.004` — Compile After Delivery
+- `mitre.attack:DefenseEvasion.T1027.005` — Indicator Removal from Tools
+- `mitre.attack:DefenseEvasion.T1027.006` — HTML Smuggling
+- `mitre.attack:DefenseEvasion.T1027.007` — Dynamic API Resolution
+- `mitre.attack:DefenseEvasion.T1027.008` — Stripped Payloads
+- `mitre.attack:DefenseEvasion.T1027.009` — Embedded Payloads
+- `mitre.attack:DefenseEvasion.T1027.010` — Command Obfuscation
+- `mitre.attack:DefenseEvasion.T1027.011` — Fileless Storage
+- `mitre.attack:DefenseEvasion.T1027.012` — LNK Icon Smuggling
+- `mitre.attack:DefenseEvasion.T1027.013` — Encrypted/Encoded File
+- `mitre.attack:DefenseEvasion.T1027.014` — Polymorphic Code
+- `mitre.attack:DefenseEvasion.T1027.015` — Compression
+- `mitre.attack:DefenseEvasion.T1027.016` — Junk Code Insertion
+- `mitre.attack:DefenseEvasion.T1027.017` — SVG Smuggling
+- `mitre.attack:DefenseEvasion.T1036` — Masquerading
+- `mitre.attack:DefenseEvasion.T1036.001` — Invalid Code Signature
+- `mitre.attack:DefenseEvasion.T1036.002` — Right-to-Left Override
+- `mitre.attack:DefenseEvasion.T1036.003` — Rename Legitimate Utilities
+- `mitre.attack:DefenseEvasion.T1036.004` — Masquerade Task or Service
+- `mitre.attack:DefenseEvasion.T1036.005` — Match Legitimate Resource Name or Location
+- `mitre.attack:DefenseEvasion.T1036.006` — Space after Filename
+- `mitre.attack:DefenseEvasion.T1036.007` — Double File Extension
+- `mitre.attack:DefenseEvasion.T1036.008` — Masquerade File Type
+- `mitre.attack:DefenseEvasion.T1036.009` — Break Process Trees
+- `mitre.attack:DefenseEvasion.T1036.010` — Masquerade Account Name
+- `mitre.attack:DefenseEvasion.T1036.011` — Overwrite Process Arguments
+- `mitre.attack:DefenseEvasion.T1036.012` — Browser Fingerprint
+- `mitre.attack:DefenseEvasion.T1055` — Process Injection
+- `mitre.attack:DefenseEvasion.T1055.001` — Dynamic-link Library Injection
+- `mitre.attack:DefenseEvasion.T1055.002` — Portable Executable Injection
+- `mitre.attack:DefenseEvasion.T1055.003` — Thread Execution Hijacking
+- `mitre.attack:DefenseEvasion.T1055.004` — Asynchronous Procedure Call
+- `mitre.attack:DefenseEvasion.T1055.005` — Thread Local Storage
+- `mitre.attack:DefenseEvasion.T1055.008` — Ptrace System Calls
+- `mitre.attack:DefenseEvasion.T1055.009` — Proc Memory
+- `mitre.attack:DefenseEvasion.T1055.011` — Extra Window Memory Injection
+- `mitre.attack:DefenseEvasion.T1055.012` — Process Hollowing
+- `mitre.attack:DefenseEvasion.T1055.013` — Process Doppelgänging
+- `mitre.attack:DefenseEvasion.T1055.014` — VDSO Hijacking
+- `mitre.attack:DefenseEvasion.T1055.015` — ListPlanting
+- `mitre.attack:DefenseEvasion.T1070` — Indicator Removal
+- `mitre.attack:DefenseEvasion.T1070.001` — Clear Windows Event Logs
+- `mitre.attack:DefenseEvasion.T1070.002` — Clear Linux or Mac System Logs
+- `mitre.attack:DefenseEvasion.T1070.003` — Clear Command History
+- `mitre.attack:DefenseEvasion.T1070.004` — File Deletion
+- `mitre.attack:DefenseEvasion.T1070.005` — Network Share Connection Removal
+- `mitre.attack:DefenseEvasion.T1070.006` — Timestomp
+- `mitre.attack:DefenseEvasion.T1070.007` — Clear Network Connection History and Configurations
+- `mitre.attack:DefenseEvasion.T1070.008` — Clear Mailbox Data
+- `mitre.attack:DefenseEvasion.T1070.009` — Clear Persistence
+- `mitre.attack:DefenseEvasion.T1070.010` — Relocate Malware
+- `mitre.attack:DefenseEvasion.T1078` — Valid Accounts
+- `mitre.attack:DefenseEvasion.T1078.001` — Default Accounts
+- `mitre.attack:DefenseEvasion.T1078.002` — Domain Accounts
+- `mitre.attack:DefenseEvasion.T1078.003` — Local Accounts
+- `mitre.attack:DefenseEvasion.T1078.004` — Cloud Accounts
+- `mitre.attack:DefenseEvasion.T1112` — Modify Registry
+- `mitre.attack:DefenseEvasion.T1127` — Trusted Developer Utilities Proxy Execution
+- `mitre.attack:DefenseEvasion.T1127.001` — MSBuild
+- `mitre.attack:DefenseEvasion.T1127.002` — ClickOnce
+- `mitre.attack:DefenseEvasion.T1127.003` — JamPlus
+- `mitre.attack:DefenseEvasion.T1134` — Access Token Manipulation
+- `mitre.attack:DefenseEvasion.T1134.001` — Token Impersonation/Theft
+- `mitre.attack:DefenseEvasion.T1134.002` — Create Process with Token
+- `mitre.attack:DefenseEvasion.T1134.003` — Make and Impersonate Token
+- `mitre.attack:DefenseEvasion.T1134.004` — Parent PID Spoofing
+- `mitre.attack:DefenseEvasion.T1134.005` — SID-History Injection
+- `mitre.attack:DefenseEvasion.T1140` — Deobfuscate/Decode Files or Information
+- `mitre.attack:DefenseEvasion.T1197` — BITS Jobs
+- `mitre.attack:DefenseEvasion.T1202` — Indirect Command Execution
+- `mitre.attack:DefenseEvasion.T1205` — Traffic Signaling
+- `mitre.attack:DefenseEvasion.T1205.001` — Port Knocking
+- `mitre.attack:DefenseEvasion.T1205.002` — Socket Filters
+- `mitre.attack:DefenseEvasion.T1207` — Rogue Domain Controller
+- `mitre.attack:DefenseEvasion.T1211` — Exploitation for Defense Evasion
+- `mitre.attack:DefenseEvasion.T1216` — System Script Proxy Execution
+- `mitre.attack:DefenseEvasion.T1216.001` — PubPrn
+- `mitre.attack:DefenseEvasion.T1216.002` — SyncAppvPublishingServer
+- `mitre.attack:DefenseEvasion.T1218` — System Binary Proxy Execution
+- `mitre.attack:DefenseEvasion.T1218.001` — Compiled HTML File
+- `mitre.attack:DefenseEvasion.T1218.002` — Control Panel
+- `mitre.attack:DefenseEvasion.T1218.003` — CMSTP
+- `mitre.attack:DefenseEvasion.T1218.004` — InstallUtil
+- `mitre.attack:DefenseEvasion.T1218.005` — Mshta
+- `mitre.attack:DefenseEvasion.T1218.007` — Msiexec
+- `mitre.attack:DefenseEvasion.T1218.008` — Odbcconf
+- `mitre.attack:DefenseEvasion.T1218.009` — Regsvcs/Regasm
+- `mitre.attack:DefenseEvasion.T1218.010` — Regsvr32
+- `mitre.attack:DefenseEvasion.T1218.011` — Rundll32
+- `mitre.attack:DefenseEvasion.T1218.012` — Verclsid
+- `mitre.attack:DefenseEvasion.T1218.013` — Mavinject
+- `mitre.attack:DefenseEvasion.T1218.014` — MMC
+- `mitre.attack:DefenseEvasion.T1218.015` — Electron Applications
+- `mitre.attack:DefenseEvasion.T1220` — XSL Script Processing
+- `mitre.attack:DefenseEvasion.T1221` — Template Injection
+- `mitre.attack:DefenseEvasion.T1222` — File and Directory Permissions Modification
+- `mitre.attack:DefenseEvasion.T1222.001` — Windows File and Directory Permissions Modification
+- `mitre.attack:DefenseEvasion.T1222.002` — Linux and Mac File and Directory Permissions Modification
+- `mitre.attack:DefenseEvasion.T1406` — Obfuscated Files or Information
+- `mitre.attack:DefenseEvasion.T1406.001` — Steganography
+- `mitre.attack:DefenseEvasion.T1406.002` — Software Packing
+- `mitre.attack:DefenseEvasion.T1407` — Download New Code at Runtime
+- `mitre.attack:DefenseEvasion.T1480` — Execution Guardrails
+- `mitre.attack:DefenseEvasion.T1480.001` — Environmental Keying
+- `mitre.attack:DefenseEvasion.T1480.002` — Mutual Exclusion
+- `mitre.attack:DefenseEvasion.T1484` — Domain or Tenant Policy Modification
+- `mitre.attack:DefenseEvasion.T1484.001` — Group Policy Modification
+- `mitre.attack:DefenseEvasion.T1484.002` — Trust Modification
+- `mitre.attack:DefenseEvasion.T1497` — Virtualization/Sandbox Evasion
+- `mitre.attack:DefenseEvasion.T1497.001` — System Checks
+- `mitre.attack:DefenseEvasion.T1497.002` — User Activity Based Checks
+- `mitre.attack:DefenseEvasion.T1497.003` — Time Based Checks
+- `mitre.attack:DefenseEvasion.T1516` — Input Injection
+- `mitre.attack:DefenseEvasion.T1535` — Unused/Unsupported Cloud Regions
+- `mitre.attack:DefenseEvasion.T1541` — Foreground Persistence
+- `mitre.attack:DefenseEvasion.T1542` — Pre-OS Boot
+- `mitre.attack:DefenseEvasion.T1542.001` — System Firmware
+- `mitre.attack:DefenseEvasion.T1542.002` — Component Firmware
+- `mitre.attack:DefenseEvasion.T1542.003` — Bootkit
+- `mitre.attack:DefenseEvasion.T1542.004` — ROMMONkit
+- `mitre.attack:DefenseEvasion.T1542.005` — TFTP Boot
+- `mitre.attack:DefenseEvasion.T1548` — Abuse Elevation Control Mechanism
+- `mitre.attack:DefenseEvasion.T1548.001` — Setuid and Setgid
+- `mitre.attack:DefenseEvasion.T1548.002` — Bypass User Account Control
+- `mitre.attack:DefenseEvasion.T1548.003` — Sudo and Sudo Caching
+- `mitre.attack:DefenseEvasion.T1548.004` — Elevated Execution with Prompt
+- `mitre.attack:DefenseEvasion.T1548.005` — Temporary Elevated Cloud Access
+- `mitre.attack:DefenseEvasion.T1548.006` — TCC Manipulation
+- `mitre.attack:DefenseEvasion.T1550` — Use Alternate Authentication Material
+- `mitre.attack:DefenseEvasion.T1550.001` — Application Access Token
+- `mitre.attack:DefenseEvasion.T1550.002` — Pass the Hash
+- `mitre.attack:DefenseEvasion.T1550.003` — Pass the Ticket
+- `mitre.attack:DefenseEvasion.T1550.004` — Web Session Cookie
+- `mitre.attack:DefenseEvasion.T1553` — Subvert Trust Controls
+- `mitre.attack:DefenseEvasion.T1553.001` — Gatekeeper Bypass
+- `mitre.attack:DefenseEvasion.T1553.002` — Code Signing
+- `mitre.attack:DefenseEvasion.T1553.003` — SIP and Trust Provider Hijacking
+- `mitre.attack:DefenseEvasion.T1553.004` — Install Root Certificate
+- `mitre.attack:DefenseEvasion.T1553.005` — Mark-of-the-Web Bypass
+- `mitre.attack:DefenseEvasion.T1553.006` — Code Signing Policy Modification
+- `mitre.attack:DefenseEvasion.T1556` — Modify Authentication Process
+- `mitre.attack:DefenseEvasion.T1556.001` — Domain Controller Authentication
+- `mitre.attack:DefenseEvasion.T1556.002` — Password Filter DLL
+- `mitre.attack:DefenseEvasion.T1556.003` — Pluggable Authentication Modules
+- `mitre.attack:DefenseEvasion.T1556.004` — Network Device Authentication
+- `mitre.attack:DefenseEvasion.T1556.005` — Reversible Encryption
+- `mitre.attack:DefenseEvasion.T1556.006` — Multi-Factor Authentication
+- `mitre.attack:DefenseEvasion.T1556.007` — Hybrid Identity
+- `mitre.attack:DefenseEvasion.T1556.008` — Network Provider DLL
+- `mitre.attack:DefenseEvasion.T1556.009` — Conditional Access Policies
+- `mitre.attack:DefenseEvasion.T1562` — Impair Defenses
+- `mitre.attack:DefenseEvasion.T1562.001` — Disable or Modify Tools
+- `mitre.attack:DefenseEvasion.T1562.002` — Disable Windows Event Logging
+- `mitre.attack:DefenseEvasion.T1562.003` — Impair Command History Logging
+- `mitre.attack:DefenseEvasion.T1562.004` — Disable or Modify System Firewall
+- `mitre.attack:DefenseEvasion.T1562.006` — Indicator Blocking
+- `mitre.attack:DefenseEvasion.T1562.007` — Disable or Modify Cloud Firewall
+- `mitre.attack:DefenseEvasion.T1562.008` — Disable or Modify Cloud Logs
+- `mitre.attack:DefenseEvasion.T1562.009` — Safe Mode Boot
+- `mitre.attack:DefenseEvasion.T1562.010` — Downgrade Attack
+- `mitre.attack:DefenseEvasion.T1562.011` — Spoof Security Alerting
+- `mitre.attack:DefenseEvasion.T1562.012` — Disable or Modify Linux Audit System
+- `mitre.attack:DefenseEvasion.T1562.013` — Disable or Modify Network Device Firewall
+- `mitre.attack:DefenseEvasion.T1564` — Hide Artifacts
+- `mitre.attack:DefenseEvasion.T1564.001` — Hidden Files and Directories
+- `mitre.attack:DefenseEvasion.T1564.002` — Hidden Users
+- `mitre.attack:DefenseEvasion.T1564.003` — Hidden Window
+- `mitre.attack:DefenseEvasion.T1564.004` — NTFS File Attributes
+- `mitre.attack:DefenseEvasion.T1564.005` — Hidden File System
+- `mitre.attack:DefenseEvasion.T1564.006` — Run Virtual Instance
+- `mitre.attack:DefenseEvasion.T1564.007` — VBA Stomping
+- `mitre.attack:DefenseEvasion.T1564.008` — Email Hiding Rules
+- `mitre.attack:DefenseEvasion.T1564.009` — Resource Forking
+- `mitre.attack:DefenseEvasion.T1564.010` — Process Argument Spoofing
+- `mitre.attack:DefenseEvasion.T1564.011` — Ignore Process Interrupts
+- `mitre.attack:DefenseEvasion.T1564.012` — File/Path Exclusions
+- `mitre.attack:DefenseEvasion.T1564.013` — Bind Mounts
+- `mitre.attack:DefenseEvasion.T1564.014` — Extended Attributes
+- `mitre.attack:DefenseEvasion.T1574` — Hijack Execution Flow
+- `mitre.attack:DefenseEvasion.T1574.001` — DLL
+- `mitre.attack:DefenseEvasion.T1574.004` — Dylib Hijacking
+- `mitre.attack:DefenseEvasion.T1574.005` — Executable Installer File Permissions Weakness
+- `mitre.attack:DefenseEvasion.T1574.006` — Dynamic Linker Hijacking
+- `mitre.attack:DefenseEvasion.T1574.007` — Path Interception by PATH Environment Variable
+- `mitre.attack:DefenseEvasion.T1574.008` — Path Interception by Search Order Hijacking
+- `mitre.attack:DefenseEvasion.T1574.009` — Path Interception by Unquoted Path
+- `mitre.attack:DefenseEvasion.T1574.010` — Services File Permissions Weakness
+- `mitre.attack:DefenseEvasion.T1574.011` — Services Registry Permissions Weakness
+- `mitre.attack:DefenseEvasion.T1574.012` — COR_PROFILER
+- `mitre.attack:DefenseEvasion.T1574.013` — KernelCallbackTable
+- `mitre.attack:DefenseEvasion.T1574.014` — AppDomainManager
+- `mitre.attack:DefenseEvasion.T1575` — Native API
+- `mitre.attack:DefenseEvasion.T1578` — Modify Cloud Compute Infrastructure
+- `mitre.attack:DefenseEvasion.T1578.001` — Create Snapshot
+- `mitre.attack:DefenseEvasion.T1578.002` — Create Cloud Instance
+- `mitre.attack:DefenseEvasion.T1578.003` — Delete Cloud Instance
+- `mitre.attack:DefenseEvasion.T1578.004` — Revert Cloud Instance
+- `mitre.attack:DefenseEvasion.T1578.005` — Modify Cloud Compute Configurations
+- `mitre.attack:DefenseEvasion.T1599` — Network Boundary Bridging
+- `mitre.attack:DefenseEvasion.T1599.001` — Network Address Translation Traversal
+- `mitre.attack:DefenseEvasion.T1600` — Weaken Encryption
+- `mitre.attack:DefenseEvasion.T1600.001` — Reduce Key Space
+- `mitre.attack:DefenseEvasion.T1600.002` — Disable Crypto Hardware
+- `mitre.attack:DefenseEvasion.T1601` — Modify System Image
+- `mitre.attack:DefenseEvasion.T1601.001` — Patch System Image
+- `mitre.attack:DefenseEvasion.T1601.002` — Downgrade System Image
+- `mitre.attack:DefenseEvasion.T1604` — Proxy Through Victim
+- `mitre.attack:DefenseEvasion.T1610` — Deploy Container
+- `mitre.attack:DefenseEvasion.T1612` — Build Image on Host
+- `mitre.attack:DefenseEvasion.T1617` — Hooking
+- `mitre.attack:DefenseEvasion.T1620` — Reflective Code Loading
+- `mitre.attack:DefenseEvasion.T1622` — Debugger Evasion
+- `mitre.attack:DefenseEvasion.T1627` — Execution Guardrails
+- `mitre.attack:DefenseEvasion.T1627.001` — Geofencing
+- `mitre.attack:DefenseEvasion.T1628` — Hide Artifacts
+- `mitre.attack:DefenseEvasion.T1628.001` — Suppress Application Icon
+- `mitre.attack:DefenseEvasion.T1628.002` — User Evasion
+- `mitre.attack:DefenseEvasion.T1628.003` — Conceal Multimedia Files
+- `mitre.attack:DefenseEvasion.T1629` — Impair Defenses
+- `mitre.attack:DefenseEvasion.T1629.001` — Prevent Application Removal
+- `mitre.attack:DefenseEvasion.T1629.002` — Device Lockout
+- `mitre.attack:DefenseEvasion.T1629.003` — Disable or Modify Tools
+- `mitre.attack:DefenseEvasion.T1630` — Indicator Removal on Host
+- `mitre.attack:DefenseEvasion.T1630.001` — Uninstall Malicious Application
+- `mitre.attack:DefenseEvasion.T1630.002` — File Deletion
+- `mitre.attack:DefenseEvasion.T1630.003` — Disguise Root/Jailbreak Indicators
+- `mitre.attack:DefenseEvasion.T1631` — Process Injection
+- `mitre.attack:DefenseEvasion.T1631.001` — Ptrace System Calls
+- `mitre.attack:DefenseEvasion.T1632` — Subvert Trust Controls
+- `mitre.attack:DefenseEvasion.T1632.001` — Code Signing Policy Modification
+- `mitre.attack:DefenseEvasion.T1633` — Virtualization/Sandbox Evasion
+- `mitre.attack:DefenseEvasion.T1633.001` — System Checks
+- `mitre.attack:DefenseEvasion.T1647` — Plist File Modification
+- `mitre.attack:DefenseEvasion.T1655` — Masquerading
+- `mitre.attack:DefenseEvasion.T1655.001` — Match Legitimate Name or Location
+- `mitre.attack:DefenseEvasion.T1656` — Impersonation
+- `mitre.attack:DefenseEvasion.T1661` — Application Versioning
+- `mitre.attack:DefenseEvasion.T1666` — Modify Cloud Resource Hierarchy
+- `mitre.attack:DefenseEvasion.T1670` — Virtualization Solution
+- `mitre.attack:DefenseEvasion.T1672` — Email Spoofing
+- `mitre.attack:DefenseEvasion.T1678` — Delay Execution
+- `mitre.attack:DefenseEvasion.T1679` — Selective Exclusion
+- `mitre.attack:Discovery.T0840` — Network Connection Enumeration
+- `mitre.attack:Discovery.T0842` — Network Sniffing
+- `mitre.attack:Discovery.T0846` — Remote System Discovery
+- `mitre.attack:Discovery.T0887` — Wireless Sniffing
+- `mitre.attack:Discovery.T0888` — Remote System Information Discovery
+- `mitre.attack:Discovery.T1007` — System Service Discovery
+- `mitre.attack:Discovery.T1010` — Application Window Discovery
+- `mitre.attack:Discovery.T1012` — Query Registry
+- `mitre.attack:Discovery.T1016` — System Network Configuration Discovery
+- `mitre.attack:Discovery.T1016.001` — Internet Connection Discovery
+- `mitre.attack:Discovery.T1016.002` — Wi-Fi Discovery
+- `mitre.attack:Discovery.T1018` — Remote System Discovery
+- `mitre.attack:Discovery.T1033` — System Owner/User Discovery
+- `mitre.attack:Discovery.T1040` — Network Sniffing
+- `mitre.attack:Discovery.T1046` — Network Service Discovery
+- `mitre.attack:Discovery.T1049` — System Network Connections Discovery
+- `mitre.attack:Discovery.T1057` — Process Discovery
+- `mitre.attack:Discovery.T1069` — Permission Groups Discovery
+- `mitre.attack:Discovery.T1069.001` — Local Groups
+- `mitre.attack:Discovery.T1069.002` — Domain Groups
+- `mitre.attack:Discovery.T1069.003` — Cloud Groups
+- `mitre.attack:Discovery.T1082` — System Information Discovery
+- `mitre.attack:Discovery.T1083` — File and Directory Discovery
+- `mitre.attack:Discovery.T1087` — Account Discovery
+- `mitre.attack:Discovery.T1087.001` — Local Account
+- `mitre.attack:Discovery.T1087.002` — Domain Account
+- `mitre.attack:Discovery.T1087.003` — Email Account
+- `mitre.attack:Discovery.T1087.004` — Cloud Account
+- `mitre.attack:Discovery.T1120` — Peripheral Device Discovery
+- `mitre.attack:Discovery.T1124` — System Time Discovery
+- `mitre.attack:Discovery.T1135` — Network Share Discovery
+- `mitre.attack:Discovery.T1201` — Password Policy Discovery
+- `mitre.attack:Discovery.T1217` — Browser Information Discovery
+- `mitre.attack:Discovery.T1418` — Software Discovery
+- `mitre.attack:Discovery.T1418.001` — Security Software Discovery
+- `mitre.attack:Discovery.T1420` — File and Directory Discovery
+- `mitre.attack:Discovery.T1421` — System Network Connections Discovery
+- `mitre.attack:Discovery.T1422` — System Network Configuration Discovery
+- `mitre.attack:Discovery.T1422.001` — Internet Connection Discovery
+- `mitre.attack:Discovery.T1422.002` — Wi-Fi Discovery
+- `mitre.attack:Discovery.T1423` — Network Service Scanning
+- `mitre.attack:Discovery.T1424` — Process Discovery
+- `mitre.attack:Discovery.T1426` — System Information Discovery
+- `mitre.attack:Discovery.T1430` — Location Tracking
+- `mitre.attack:Discovery.T1430.001` — Remote Device Management Services
+- `mitre.attack:Discovery.T1430.002` — Impersonate SS7 Nodes
+- `mitre.attack:Discovery.T1482` — Domain Trust Discovery
+- `mitre.attack:Discovery.T1497` — Virtualization/Sandbox Evasion
+- `mitre.attack:Discovery.T1497.001` — System Checks
+- `mitre.attack:Discovery.T1497.002` — User Activity Based Checks
+- `mitre.attack:Discovery.T1497.003` — Time Based Checks
+- `mitre.attack:Discovery.T1518` — Software Discovery
+- `mitre.attack:Discovery.T1518.001` — Security Software Discovery
+- `mitre.attack:Discovery.T1518.002` — Backup Software Discovery
+- `mitre.attack:Discovery.T1526` — Cloud Service Discovery
+- `mitre.attack:Discovery.T1538` — Cloud Service Dashboard
+- `mitre.attack:Discovery.T1580` — Cloud Infrastructure Discovery
+- `mitre.attack:Discovery.T1613` — Container and Resource Discovery
+- `mitre.attack:Discovery.T1614` — System Location Discovery
+- `mitre.attack:Discovery.T1614.001` — System Language Discovery
+- `mitre.attack:Discovery.T1615` — Group Policy Discovery
+- `mitre.attack:Discovery.T1619` — Cloud Storage Object Discovery
+- `mitre.attack:Discovery.T1622` — Debugger Evasion
+- `mitre.attack:Discovery.T1652` — Device Driver Discovery
+- `mitre.attack:Discovery.T1654` — Log Enumeration
+- `mitre.attack:Discovery.T1673` — Virtual Machine Discovery
+- `mitre.attack:Discovery.T1680` — Local Storage Discovery
+- `mitre.attack:Evasion.T0820` — Exploitation for Evasion
+- `mitre.attack:Evasion.T0849` — Masquerading
+- `mitre.attack:Evasion.T0851` — Rootkit
+- `mitre.attack:Evasion.T0856` — Spoof Reporting Message
+- `mitre.attack:Evasion.T0858` — Change Operating Mode
+- `mitre.attack:Evasion.T0872` — Indicator Removal on Host
+- `mitre.attack:Evasion.T0894` — System Binary Proxy Execution
+- `mitre.attack:Execution.T0807` — Command-Line Interface
+- `mitre.attack:Execution.T0821` — Modify Controller Tasking
+- `mitre.attack:Execution.T0823` — Graphical User Interface
+- `mitre.attack:Execution.T0834` — Native API
+- `mitre.attack:Execution.T0853` — Scripting
+- `mitre.attack:Execution.T0858` — Change Operating Mode
+- `mitre.attack:Execution.T0863` — User Execution
+- `mitre.attack:Execution.T0871` — Execution through API
+- `mitre.attack:Execution.T0874` — Hooking
+- `mitre.attack:Execution.T0895` — Autorun Image
+- `mitre.attack:Execution.T1047` — Windows Management Instrumentation
+- `mitre.attack:Execution.T1053` — Scheduled Task/Job
+- `mitre.attack:Execution.T1053.002` — At
+- `mitre.attack:Execution.T1053.003` — Cron
+- `mitre.attack:Execution.T1053.005` — Scheduled Task
+- `mitre.attack:Execution.T1053.006` — Systemd Timers
+- `mitre.attack:Execution.T1053.007` — Container Orchestration Job
+- `mitre.attack:Execution.T1059` — Command and Scripting Interpreter
+- `mitre.attack:Execution.T1059.001` — PowerShell
+- `mitre.attack:Execution.T1059.002` — AppleScript
+- `mitre.attack:Execution.T1059.003` — Windows Command Shell
+- `mitre.attack:Execution.T1059.004` — Unix Shell
+- `mitre.attack:Execution.T1059.005` — Visual Basic
+- `mitre.attack:Execution.T1059.006` — Python
+- `mitre.attack:Execution.T1059.007` — JavaScript
+- `mitre.attack:Execution.T1059.008` — Network Device CLI
+- `mitre.attack:Execution.T1059.009` — Cloud API
+- `mitre.attack:Execution.T1059.010` — AutoHotKey & AutoIT
+- `mitre.attack:Execution.T1059.011` — Lua
+- `mitre.attack:Execution.T1059.012` — Hypervisor CLI
+- `mitre.attack:Execution.T1059.013` — Container CLI/API
+- `mitre.attack:Execution.T1072` — Software Deployment Tools
+- `mitre.attack:Execution.T1106` — Native API
+- `mitre.attack:Execution.T1129` — Shared Modules
+- `mitre.attack:Execution.T1203` — Exploitation for Client Execution
+- `mitre.attack:Execution.T1204` — User Execution
+- `mitre.attack:Execution.T1204.001` — Malicious Link
+- `mitre.attack:Execution.T1204.002` — Malicious File
+- `mitre.attack:Execution.T1204.003` — Malicious Image
+- `mitre.attack:Execution.T1204.004` — Malicious Copy and Paste
+- `mitre.attack:Execution.T1204.005` — Malicious Library
+- `mitre.attack:Execution.T1559` — Inter-Process Communication
+- `mitre.attack:Execution.T1559.001` — Component Object Model
+- `mitre.attack:Execution.T1559.002` — Dynamic Data Exchange
+- `mitre.attack:Execution.T1559.003` — XPC Services
+- `mitre.attack:Execution.T1569` — System Services
+- `mitre.attack:Execution.T1569.001` — Launchctl
+- `mitre.attack:Execution.T1569.002` — Service Execution
+- `mitre.attack:Execution.T1569.003` — Systemctl
+- `mitre.attack:Execution.T1575` — Native API
+- `mitre.attack:Execution.T1603` — Scheduled Task/Job
+- `mitre.attack:Execution.T1609` — Container Administration Command
+- `mitre.attack:Execution.T1610` — Deploy Container
+- `mitre.attack:Execution.T1623` — Command and Scripting Interpreter
+- `mitre.attack:Execution.T1623.001` — Unix Shell
+- `mitre.attack:Execution.T1648` — Serverless Execution
+- `mitre.attack:Execution.T1651` — Cloud Administration Command
+- `mitre.attack:Execution.T1658` — Exploitation for Client Execution
+- `mitre.attack:Execution.T1674` — Input Injection
+- `mitre.attack:Execution.T1675` — ESXi Administration Command
+- `mitre.attack:Execution.T1677` — Poisoned Pipeline Execution
+- `mitre.attack:Exfiltration.T1011` — Exfiltration Over Other Network Medium
+- `mitre.attack:Exfiltration.T1011.001` — Exfiltration Over Bluetooth
+- `mitre.attack:Exfiltration.T1020` — Automated Exfiltration
+- `mitre.attack:Exfiltration.T1020.001` — Traffic Duplication
+- `mitre.attack:Exfiltration.T1029` — Scheduled Transfer
+- `mitre.attack:Exfiltration.T1030` — Data Transfer Size Limits
+- `mitre.attack:Exfiltration.T1041` — Exfiltration Over C2 Channel
+- `mitre.attack:Exfiltration.T1048` — Exfiltration Over Alternative Protocol
+- `mitre.attack:Exfiltration.T1048.001` — Exfiltration Over Symmetric Encrypted Non-C2 Protocol
+- `mitre.attack:Exfiltration.T1048.002` — Exfiltration Over Asymmetric Encrypted Non-C2 Protocol
+- `mitre.attack:Exfiltration.T1048.003` — Exfiltration Over Unencrypted Non-C2 Protocol
+- `mitre.attack:Exfiltration.T1052` — Exfiltration Over Physical Medium
+- `mitre.attack:Exfiltration.T1052.001` — Exfiltration over USB
+- `mitre.attack:Exfiltration.T1537` — Transfer Data to Cloud Account
+- `mitre.attack:Exfiltration.T1567` — Exfiltration Over Web Service
+- `mitre.attack:Exfiltration.T1567.001` — Exfiltration to Code Repository
+- `mitre.attack:Exfiltration.T1567.002` — Exfiltration to Cloud Storage
+- `mitre.attack:Exfiltration.T1567.003` — Exfiltration to Text Storage Sites
+- `mitre.attack:Exfiltration.T1567.004` — Exfiltration Over Webhook
+- `mitre.attack:Exfiltration.T1639` — Exfiltration Over Alternative Protocol
+- `mitre.attack:Exfiltration.T1639.001` — Exfiltration Over Unencrypted Non-C2 Protocol
+- `mitre.attack:Exfiltration.T1646` — Exfiltration Over C2 Channel
+- `mitre.attack:Impact.T0813` — Denial of Control
+- `mitre.attack:Impact.T0815` — Denial of View
+- `mitre.attack:Impact.T0826` — Loss of Availability
+- `mitre.attack:Impact.T0827` — Loss of Control
+- `mitre.attack:Impact.T0828` — Loss of Productivity and Revenue
+- `mitre.attack:Impact.T0829` — Loss of View
+- `mitre.attack:Impact.T0831` — Manipulation of Control
+- `mitre.attack:Impact.T0832` — Manipulation of View
+- `mitre.attack:Impact.T0837` — Loss of Protection
+- `mitre.attack:Impact.T0879` — Damage to Property
+- `mitre.attack:Impact.T0880` — Loss of Safety
+- `mitre.attack:Impact.T0882` — Theft of Operational Information
+- `mitre.attack:Impact.T1464` — Network Denial of Service
+- `mitre.attack:Impact.T1471` — Data Encrypted for Impact
+- `mitre.attack:Impact.T1485` — Data Destruction
+- `mitre.attack:Impact.T1485.001` — Lifecycle-Triggered Deletion
+- `mitre.attack:Impact.T1486` — Data Encrypted for Impact
+- `mitre.attack:Impact.T1489` — Service Stop
+- `mitre.attack:Impact.T1490` — Inhibit System Recovery
+- `mitre.attack:Impact.T1491` — Defacement
+- `mitre.attack:Impact.T1491.001` — Internal Defacement
+- `mitre.attack:Impact.T1491.002` — External Defacement
+- `mitre.attack:Impact.T1495` — Firmware Corruption
+- `mitre.attack:Impact.T1496` — Resource Hijacking
+- `mitre.attack:Impact.T1496.001` — Compute Hijacking
+- `mitre.attack:Impact.T1496.002` — Bandwidth Hijacking
+- `mitre.attack:Impact.T1496.003` — SMS Pumping
+- `mitre.attack:Impact.T1496.004` — Cloud Service Hijacking
+- `mitre.attack:Impact.T1498` — Network Denial of Service
+- `mitre.attack:Impact.T1498.001` — Direct Network Flood
+- `mitre.attack:Impact.T1498.002` — Reflection Amplification
+- `mitre.attack:Impact.T1499` — Endpoint Denial of Service
+- `mitre.attack:Impact.T1499.001` — OS Exhaustion Flood
+- `mitre.attack:Impact.T1499.002` — Service Exhaustion Flood
+- `mitre.attack:Impact.T1499.003` — Application Exhaustion Flood
+- `mitre.attack:Impact.T1499.004` — Application or System Exploitation
+- `mitre.attack:Impact.T1516` — Input Injection
+- `mitre.attack:Impact.T1529` — System Shutdown/Reboot
+- `mitre.attack:Impact.T1531` — Account Access Removal
+- `mitre.attack:Impact.T1561` — Disk Wipe
+- `mitre.attack:Impact.T1561.001` — Disk Content Wipe
+- `mitre.attack:Impact.T1561.002` — Disk Structure Wipe
+- `mitre.attack:Impact.T1565` — Data Manipulation
+- `mitre.attack:Impact.T1565.001` — Stored Data Manipulation
+- `mitre.attack:Impact.T1565.002` — Transmitted Data Manipulation
+- `mitre.attack:Impact.T1565.003` — Runtime Data Manipulation
+- `mitre.attack:Impact.T1582` — SMS Control
+- `mitre.attack:Impact.T1616` — Call Control
+- `mitre.attack:Impact.T1640` — Account Access Removal
+- `mitre.attack:Impact.T1641` — Data Manipulation
+- `mitre.attack:Impact.T1641.001` — Transmitted Data Manipulation
+- `mitre.attack:Impact.T1642` — Endpoint Denial of Service
+- `mitre.attack:Impact.T1643` — Generate Traffic from Victim
+- `mitre.attack:Impact.T1657` — Financial Theft
+- `mitre.attack:Impact.T1662` — Data Destruction
+- `mitre.attack:Impact.T1667` — Email Bombing
+- `mitre.attack:ImpairProcessControl.T0806` — Brute Force I/O
+- `mitre.attack:ImpairProcessControl.T0836` — Modify Parameter
+- `mitre.attack:ImpairProcessControl.T0839` — Module Firmware
+- `mitre.attack:ImpairProcessControl.T0855` — Unauthorized Command Message
+- `mitre.attack:ImpairProcessControl.T0856` — Spoof Reporting Message
+- `mitre.attack:InhibitResponseFunction.T0800` — Activate Firmware Update Mode
+- `mitre.attack:InhibitResponseFunction.T0803` — Block Command Message
+- `mitre.attack:InhibitResponseFunction.T0804` — Block Reporting Message
+- `mitre.attack:InhibitResponseFunction.T0805` — Block Serial COM
+- `mitre.attack:InhibitResponseFunction.T0809` — Data Destruction
+- `mitre.attack:InhibitResponseFunction.T0814` — Denial of Service
+- `mitre.attack:InhibitResponseFunction.T0816` — Device Restart/Shutdown
+- `mitre.attack:InhibitResponseFunction.T0835` — Manipulate I/O Image
+- `mitre.attack:InhibitResponseFunction.T0838` — Modify Alarm Settings
+- `mitre.attack:InhibitResponseFunction.T0851` — Rootkit
+- `mitre.attack:InhibitResponseFunction.T0857` — System Firmware
+- `mitre.attack:InhibitResponseFunction.T0878` — Alarm Suppression
+- `mitre.attack:InhibitResponseFunction.T0881` — Service Stop
+- `mitre.attack:InhibitResponseFunction.T0892` — Change Credential
+- `mitre.attack:InitialAccess.T0817` — Drive-by Compromise
+- `mitre.attack:InitialAccess.T0819` — Exploit Public-Facing Application
+- `mitre.attack:InitialAccess.T0822` — External Remote Services
+- `mitre.attack:InitialAccess.T0847` — Replication Through Removable Media
+- `mitre.attack:InitialAccess.T0848` — Rogue Master
+- `mitre.attack:InitialAccess.T0860` — Wireless Compromise
+- `mitre.attack:InitialAccess.T0862` — Supply Chain Compromise
+- `mitre.attack:InitialAccess.T0864` — Transient Cyber Asset
+- `mitre.attack:InitialAccess.T0865` — Spearphishing Attachment
+- `mitre.attack:InitialAccess.T0866` — Exploitation of Remote Services
+- `mitre.attack:InitialAccess.T0883` — Internet Accessible Device
+- `mitre.attack:InitialAccess.T0886` — Remote Services
+- `mitre.attack:InitialAccess.T1078` — Valid Accounts
+- `mitre.attack:InitialAccess.T1078.001` — Default Accounts
+- `mitre.attack:InitialAccess.T1078.002` — Domain Accounts
+- `mitre.attack:InitialAccess.T1078.003` — Local Accounts
+- `mitre.attack:InitialAccess.T1078.004` — Cloud Accounts
+- `mitre.attack:InitialAccess.T1091` — Replication Through Removable Media
+- `mitre.attack:InitialAccess.T1133` — External Remote Services
+- `mitre.attack:InitialAccess.T1189` — Drive-by Compromise
+- `mitre.attack:InitialAccess.T1190` — Exploit Public-Facing Application
+- `mitre.attack:InitialAccess.T1195` — Supply Chain Compromise
+- `mitre.attack:InitialAccess.T1195.001` — Compromise Software Dependencies and Development Tools
+- `mitre.attack:InitialAccess.T1195.002` — Compromise Software Supply Chain
+- `mitre.attack:InitialAccess.T1195.003` — Compromise Hardware Supply Chain
+- `mitre.attack:InitialAccess.T1199` — Trusted Relationship
+- `mitre.attack:InitialAccess.T1200` — Hardware Additions
+- `mitre.attack:InitialAccess.T1451` — SIM Card Swap
+- `mitre.attack:InitialAccess.T1456` — Drive-By Compromise
+- `mitre.attack:InitialAccess.T1458` — Replication Through Removable Media
+- `mitre.attack:InitialAccess.T1461` — Lockscreen Bypass
+- `mitre.attack:InitialAccess.T1474` — Supply Chain Compromise
+- `mitre.attack:InitialAccess.T1474.001` — Compromise Software Dependencies and Development Tools
+- `mitre.attack:InitialAccess.T1474.002` — Compromise Hardware Supply Chain
+- `mitre.attack:InitialAccess.T1474.003` — Compromise Software Supply Chain
+- `mitre.attack:InitialAccess.T1566` — Phishing
+- `mitre.attack:InitialAccess.T1566.001` — Spearphishing Attachment
+- `mitre.attack:InitialAccess.T1566.002` — Spearphishing Link
+- `mitre.attack:InitialAccess.T1566.003` — Spearphishing via Service
+- `mitre.attack:InitialAccess.T1566.004` — Spearphishing Voice
+- `mitre.attack:InitialAccess.T1659` — Content Injection
+- `mitre.attack:InitialAccess.T1660` — Phishing
+- `mitre.attack:InitialAccess.T1661` — Application Versioning
+- `mitre.attack:InitialAccess.T1664` — Exploitation for Initial Access
+- `mitre.attack:InitialAccess.T1669` — Wi-Fi Networks
+- `mitre.attack:LateralMovement.T0812` — Default Credentials
+- `mitre.attack:LateralMovement.T0843` — Program Download
+- `mitre.attack:LateralMovement.T0859` — Valid Accounts
+- `mitre.attack:LateralMovement.T0866` — Exploitation of Remote Services
+- `mitre.attack:LateralMovement.T0867` — Lateral Tool Transfer
+- `mitre.attack:LateralMovement.T0886` — Remote Services
+- `mitre.attack:LateralMovement.T0891` — Hardcoded Credentials
+- `mitre.attack:LateralMovement.T1021` — Remote Services
+- `mitre.attack:LateralMovement.T1021.001` — Remote Desktop Protocol
+- `mitre.attack:LateralMovement.T1021.002` — SMB/Windows Admin Shares
+- `mitre.attack:LateralMovement.T1021.003` — Distributed Component Object Model
+- `mitre.attack:LateralMovement.T1021.004` — SSH
+- `mitre.attack:LateralMovement.T1021.005` — VNC
+- `mitre.attack:LateralMovement.T1021.006` — Windows Remote Management
+- `mitre.attack:LateralMovement.T1021.007` — Cloud Services
+- `mitre.attack:LateralMovement.T1021.008` — Direct Cloud VM Connections
+- `mitre.attack:LateralMovement.T1072` — Software Deployment Tools
+- `mitre.attack:LateralMovement.T1080` — Taint Shared Content
+- `mitre.attack:LateralMovement.T1091` — Replication Through Removable Media
+- `mitre.attack:LateralMovement.T1210` — Exploitation of Remote Services
+- `mitre.attack:LateralMovement.T1428` — Exploitation of Remote Services
+- `mitre.attack:LateralMovement.T1458` — Replication Through Removable Media
+- `mitre.attack:LateralMovement.T1534` — Internal Spearphishing
+- `mitre.attack:LateralMovement.T1550` — Use Alternate Authentication Material
+- `mitre.attack:LateralMovement.T1550.001` — Application Access Token
+- `mitre.attack:LateralMovement.T1550.002` — Pass the Hash
+- `mitre.attack:LateralMovement.T1550.003` — Pass the Ticket
+- `mitre.attack:LateralMovement.T1550.004` — Web Session Cookie
+- `mitre.attack:LateralMovement.T1563` — Remote Service Session Hijacking
+- `mitre.attack:LateralMovement.T1563.001` — SSH Hijacking
+- `mitre.attack:LateralMovement.T1563.002` — RDP Hijacking
+- `mitre.attack:LateralMovement.T1570` — Lateral Tool Transfer
+- `mitre.attack:Persistence.T0839` — Module Firmware
+- `mitre.attack:Persistence.T0857` — System Firmware
+- `mitre.attack:Persistence.T0859` — Valid Accounts
+- `mitre.attack:Persistence.T0873` — Project File Infection
+- `mitre.attack:Persistence.T0889` — Modify Program
+- `mitre.attack:Persistence.T0891` — Hardcoded Credentials
+- `mitre.attack:Persistence.T1037` — Boot or Logon Initialization Scripts
+- `mitre.attack:Persistence.T1037.001` — Logon Script (Windows)
+- `mitre.attack:Persistence.T1037.002` — Login Hook
+- `mitre.attack:Persistence.T1037.003` — Network Logon Script
+- `mitre.attack:Persistence.T1037.004` — RC Scripts
+- `mitre.attack:Persistence.T1037.005` — Startup Items
+- `mitre.attack:Persistence.T1053` — Scheduled Task/Job
+- `mitre.attack:Persistence.T1053.002` — At
+- `mitre.attack:Persistence.T1053.003` — Cron
+- `mitre.attack:Persistence.T1053.005` — Scheduled Task
+- `mitre.attack:Persistence.T1053.006` — Systemd Timers
+- `mitre.attack:Persistence.T1053.007` — Container Orchestration Job
+- `mitre.attack:Persistence.T1078` — Valid Accounts
+- `mitre.attack:Persistence.T1078.001` — Default Accounts
+- `mitre.attack:Persistence.T1078.002` — Domain Accounts
+- `mitre.attack:Persistence.T1078.003` — Local Accounts
+- `mitre.attack:Persistence.T1078.004` — Cloud Accounts
+- `mitre.attack:Persistence.T1098` — Account Manipulation
+- `mitre.attack:Persistence.T1098.001` — Additional Cloud Credentials
+- `mitre.attack:Persistence.T1098.002` — Additional Email Delegate Permissions
+- `mitre.attack:Persistence.T1098.003` — Additional Cloud Roles
+- `mitre.attack:Persistence.T1098.004` — SSH Authorized Keys
+- `mitre.attack:Persistence.T1098.005` — Device Registration
+- `mitre.attack:Persistence.T1098.006` — Additional Container Cluster Roles
+- `mitre.attack:Persistence.T1098.007` — Additional Local or Domain Groups
+- `mitre.attack:Persistence.T1112` — Modify Registry
+- `mitre.attack:Persistence.T1133` — External Remote Services
+- `mitre.attack:Persistence.T1136` — Create Account
+- `mitre.attack:Persistence.T1136.001` — Local Account
+- `mitre.attack:Persistence.T1136.002` — Domain Account
+- `mitre.attack:Persistence.T1136.003` — Cloud Account
+- `mitre.attack:Persistence.T1137` — Office Application Startup
+- `mitre.attack:Persistence.T1137.001` — Office Template Macros
+- `mitre.attack:Persistence.T1137.002` — Office Test
+- `mitre.attack:Persistence.T1137.003` — Outlook Forms
+- `mitre.attack:Persistence.T1137.004` — Outlook Home Page
+- `mitre.attack:Persistence.T1137.005` — Outlook Rules
+- `mitre.attack:Persistence.T1137.006` — Add-ins
+- `mitre.attack:Persistence.T1176` — Software Extensions
+- `mitre.attack:Persistence.T1176.001` — Browser Extensions
+- `mitre.attack:Persistence.T1176.002` — IDE Extensions
+- `mitre.attack:Persistence.T1197` — BITS Jobs
+- `mitre.attack:Persistence.T1205` — Traffic Signaling
+- `mitre.attack:Persistence.T1205.001` — Port Knocking
+- `mitre.attack:Persistence.T1205.002` — Socket Filters
+- `mitre.attack:Persistence.T1398` — Boot or Logon Initialization Scripts
+- `mitre.attack:Persistence.T1505` — Server Software Component
+- `mitre.attack:Persistence.T1505.001` — SQL Stored Procedures
+- `mitre.attack:Persistence.T1505.002` — Transport Agent
+- `mitre.attack:Persistence.T1505.003` — Web Shell
+- `mitre.attack:Persistence.T1505.004` — IIS Components
+- `mitre.attack:Persistence.T1505.005` — Terminal Services DLL
+- `mitre.attack:Persistence.T1505.006` — vSphere Installation Bundles
+- `mitre.attack:Persistence.T1525` — Implant Internal Image
+- `mitre.attack:Persistence.T1541` — Foreground Persistence
+- `mitre.attack:Persistence.T1542` — Pre-OS Boot
+- `mitre.attack:Persistence.T1542.001` — System Firmware
+- `mitre.attack:Persistence.T1542.002` — Component Firmware
+- `mitre.attack:Persistence.T1542.003` — Bootkit
+- `mitre.attack:Persistence.T1542.004` — ROMMONkit
+- `mitre.attack:Persistence.T1542.005` — TFTP Boot
+- `mitre.attack:Persistence.T1543` — Create or Modify System Process
+- `mitre.attack:Persistence.T1543.001` — Launch Agent
+- `mitre.attack:Persistence.T1543.002` — Systemd Service
+- `mitre.attack:Persistence.T1543.003` — Windows Service
+- `mitre.attack:Persistence.T1543.004` — Launch Daemon
+- `mitre.attack:Persistence.T1543.005` — Container Service
+- `mitre.attack:Persistence.T1546` — Event Triggered Execution
+- `mitre.attack:Persistence.T1546.001` — Change Default File Association
+- `mitre.attack:Persistence.T1546.002` — Screensaver
+- `mitre.attack:Persistence.T1546.003` — Windows Management Instrumentation Event Subscription
+- `mitre.attack:Persistence.T1546.004` — Unix Shell Configuration Modification
+- `mitre.attack:Persistence.T1546.005` — Trap
+- `mitre.attack:Persistence.T1546.006` — LC_LOAD_DYLIB Addition
+- `mitre.attack:Persistence.T1546.007` — Netsh Helper DLL
+- `mitre.attack:Persistence.T1546.008` — Accessibility Features
+- `mitre.attack:Persistence.T1546.009` — AppCert DLLs
+- `mitre.attack:Persistence.T1546.010` — AppInit DLLs
+- `mitre.attack:Persistence.T1546.011` — Application Shimming
+- `mitre.attack:Persistence.T1546.012` — Image File Execution Options Injection
+- `mitre.attack:Persistence.T1546.013` — PowerShell Profile
+- `mitre.attack:Persistence.T1546.014` — Emond
+- `mitre.attack:Persistence.T1546.015` — Component Object Model Hijacking
+- `mitre.attack:Persistence.T1546.016` — Installer Packages
+- `mitre.attack:Persistence.T1546.017` — Udev Rules
+- `mitre.attack:Persistence.T1546.018` — Python Startup Hooks
+- `mitre.attack:Persistence.T1547` — Boot or Logon Autostart Execution
+- `mitre.attack:Persistence.T1547.001` — Registry Run Keys / Startup Folder
+- `mitre.attack:Persistence.T1547.002` — Authentication Package
+- `mitre.attack:Persistence.T1547.003` — Time Providers
+- `mitre.attack:Persistence.T1547.004` — Winlogon Helper DLL
+- `mitre.attack:Persistence.T1547.005` — Security Support Provider
+- `mitre.attack:Persistence.T1547.006` — Kernel Modules and Extensions
+- `mitre.attack:Persistence.T1547.007` — Re-opened Applications
+- `mitre.attack:Persistence.T1547.008` — LSASS Driver
+- `mitre.attack:Persistence.T1547.009` — Shortcut Modification
+- `mitre.attack:Persistence.T1547.010` — Port Monitors
+- `mitre.attack:Persistence.T1547.012` — Print Processors
+- `mitre.attack:Persistence.T1547.013` — XDG Autostart Entries
+- `mitre.attack:Persistence.T1547.014` — Active Setup
+- `mitre.attack:Persistence.T1547.015` — Login Items
+- `mitre.attack:Persistence.T1554` — Compromise Host Software Binary
+- `mitre.attack:Persistence.T1556` — Modify Authentication Process
+- `mitre.attack:Persistence.T1556.001` — Domain Controller Authentication
+- `mitre.attack:Persistence.T1556.002` — Password Filter DLL
+- `mitre.attack:Persistence.T1556.003` — Pluggable Authentication Modules
+- `mitre.attack:Persistence.T1556.004` — Network Device Authentication
+- `mitre.attack:Persistence.T1556.005` — Reversible Encryption
+- `mitre.attack:Persistence.T1556.006` — Multi-Factor Authentication
+- `mitre.attack:Persistence.T1556.007` — Hybrid Identity
+- `mitre.attack:Persistence.T1556.008` — Network Provider DLL
+- `mitre.attack:Persistence.T1556.009` — Conditional Access Policies
+- `mitre.attack:Persistence.T1574` — Hijack Execution Flow
+- `mitre.attack:Persistence.T1574.001` — DLL
+- `mitre.attack:Persistence.T1574.004` — Dylib Hijacking
+- `mitre.attack:Persistence.T1574.005` — Executable Installer File Permissions Weakness
+- `mitre.attack:Persistence.T1574.006` — Dynamic Linker Hijacking
+- `mitre.attack:Persistence.T1574.007` — Path Interception by PATH Environment Variable
+- `mitre.attack:Persistence.T1574.008` — Path Interception by Search Order Hijacking
+- `mitre.attack:Persistence.T1574.009` — Path Interception by Unquoted Path
+- `mitre.attack:Persistence.T1574.010` — Services File Permissions Weakness
+- `mitre.attack:Persistence.T1574.011` — Services Registry Permissions Weakness
+- `mitre.attack:Persistence.T1574.012` — COR_PROFILER
+- `mitre.attack:Persistence.T1574.013` — KernelCallbackTable
+- `mitre.attack:Persistence.T1574.014` — AppDomainManager
+- `mitre.attack:Persistence.T1577` — Compromise Application Executable
+- `mitre.attack:Persistence.T1603` — Scheduled Task/Job
+- `mitre.attack:Persistence.T1624` — Event Triggered Execution
+- `mitre.attack:Persistence.T1624.001` — Broadcast Receivers
+- `mitre.attack:Persistence.T1625` — Hijack Execution Flow
+- `mitre.attack:Persistence.T1625.001` — System Runtime API Hijacking
+- `mitre.attack:Persistence.T1645` — Compromise Client Software Binary
+- `mitre.attack:Persistence.T1653` — Power Settings
+- `mitre.attack:Persistence.T1668` — Exclusive Control
+- `mitre.attack:Persistence.T1671` — Cloud Application Integration
+- `mitre.attack:Persistence.T1676` — Linked Devices
+- `mitre.attack:PrivilegeEscalation.T0874` — Hooking
+- `mitre.attack:PrivilegeEscalation.T0890` — Exploitation for Privilege Escalation
+- `mitre.attack:PrivilegeEscalation.T1037` — Boot or Logon Initialization Scripts
+- `mitre.attack:PrivilegeEscalation.T1037.001` — Logon Script (Windows)
+- `mitre.attack:PrivilegeEscalation.T1037.002` — Login Hook
+- `mitre.attack:PrivilegeEscalation.T1037.003` — Network Logon Script
+- `mitre.attack:PrivilegeEscalation.T1037.004` — RC Scripts
+- `mitre.attack:PrivilegeEscalation.T1037.005` — Startup Items
+- `mitre.attack:PrivilegeEscalation.T1053` — Scheduled Task/Job
+- `mitre.attack:PrivilegeEscalation.T1053.002` — At
+- `mitre.attack:PrivilegeEscalation.T1053.003` — Cron
+- `mitre.attack:PrivilegeEscalation.T1053.005` — Scheduled Task
+- `mitre.attack:PrivilegeEscalation.T1053.006` — Systemd Timers
+- `mitre.attack:PrivilegeEscalation.T1053.007` — Container Orchestration Job
+- `mitre.attack:PrivilegeEscalation.T1055` — Process Injection
+- `mitre.attack:PrivilegeEscalation.T1055.001` — Dynamic-link Library Injection
+- `mitre.attack:PrivilegeEscalation.T1055.002` — Portable Executable Injection
+- `mitre.attack:PrivilegeEscalation.T1055.003` — Thread Execution Hijacking
+- `mitre.attack:PrivilegeEscalation.T1055.004` — Asynchronous Procedure Call
+- `mitre.attack:PrivilegeEscalation.T1055.005` — Thread Local Storage
+- `mitre.attack:PrivilegeEscalation.T1055.008` — Ptrace System Calls
+- `mitre.attack:PrivilegeEscalation.T1055.009` — Proc Memory
+- `mitre.attack:PrivilegeEscalation.T1055.011` — Extra Window Memory Injection
+- `mitre.attack:PrivilegeEscalation.T1055.012` — Process Hollowing
+- `mitre.attack:PrivilegeEscalation.T1055.013` — Process Doppelgänging
+- `mitre.attack:PrivilegeEscalation.T1055.014` — VDSO Hijacking
+- `mitre.attack:PrivilegeEscalation.T1055.015` — ListPlanting
+- `mitre.attack:PrivilegeEscalation.T1068` — Exploitation for Privilege Escalation
+- `mitre.attack:PrivilegeEscalation.T1078` — Valid Accounts
+- `mitre.attack:PrivilegeEscalation.T1078.001` — Default Accounts
+- `mitre.attack:PrivilegeEscalation.T1078.002` — Domain Accounts
+- `mitre.attack:PrivilegeEscalation.T1078.003` — Local Accounts
+- `mitre.attack:PrivilegeEscalation.T1078.004` — Cloud Accounts
+- `mitre.attack:PrivilegeEscalation.T1098` — Account Manipulation
+- `mitre.attack:PrivilegeEscalation.T1098.001` — Additional Cloud Credentials
+- `mitre.attack:PrivilegeEscalation.T1098.002` — Additional Email Delegate Permissions
+- `mitre.attack:PrivilegeEscalation.T1098.003` — Additional Cloud Roles
+- `mitre.attack:PrivilegeEscalation.T1098.004` — SSH Authorized Keys
+- `mitre.attack:PrivilegeEscalation.T1098.005` — Device Registration
+- `mitre.attack:PrivilegeEscalation.T1098.006` — Additional Container Cluster Roles
+- `mitre.attack:PrivilegeEscalation.T1098.007` — Additional Local or Domain Groups
+- `mitre.attack:PrivilegeEscalation.T1134` — Access Token Manipulation
+- `mitre.attack:PrivilegeEscalation.T1134.001` — Token Impersonation/Theft
+- `mitre.attack:PrivilegeEscalation.T1134.002` — Create Process with Token
+- `mitre.attack:PrivilegeEscalation.T1134.003` — Make and Impersonate Token
+- `mitre.attack:PrivilegeEscalation.T1134.004` — Parent PID Spoofing
+- `mitre.attack:PrivilegeEscalation.T1134.005` — SID-History Injection
+- `mitre.attack:PrivilegeEscalation.T1404` — Exploitation for Privilege Escalation
+- `mitre.attack:PrivilegeEscalation.T1484` — Domain or Tenant Policy Modification
+- `mitre.attack:PrivilegeEscalation.T1484.001` — Group Policy Modification
+- `mitre.attack:PrivilegeEscalation.T1484.002` — Trust Modification
+- `mitre.attack:PrivilegeEscalation.T1543` — Create or Modify System Process
+- `mitre.attack:PrivilegeEscalation.T1543.001` — Launch Agent
+- `mitre.attack:PrivilegeEscalation.T1543.002` — Systemd Service
+- `mitre.attack:PrivilegeEscalation.T1543.003` — Windows Service
+- `mitre.attack:PrivilegeEscalation.T1543.004` — Launch Daemon
+- `mitre.attack:PrivilegeEscalation.T1543.005` — Container Service
+- `mitre.attack:PrivilegeEscalation.T1546` — Event Triggered Execution
+- `mitre.attack:PrivilegeEscalation.T1546.001` — Change Default File Association
+- `mitre.attack:PrivilegeEscalation.T1546.002` — Screensaver
+- `mitre.attack:PrivilegeEscalation.T1546.003` — Windows Management Instrumentation Event Subscription
+- `mitre.attack:PrivilegeEscalation.T1546.004` — Unix Shell Configuration Modification
+- `mitre.attack:PrivilegeEscalation.T1546.005` — Trap
+- `mitre.attack:PrivilegeEscalation.T1546.006` — LC_LOAD_DYLIB Addition
+- `mitre.attack:PrivilegeEscalation.T1546.007` — Netsh Helper DLL
+- `mitre.attack:PrivilegeEscalation.T1546.008` — Accessibility Features
+- `mitre.attack:PrivilegeEscalation.T1546.009` — AppCert DLLs
+- `mitre.attack:PrivilegeEscalation.T1546.010` — AppInit DLLs
+- `mitre.attack:PrivilegeEscalation.T1546.011` — Application Shimming
+- `mitre.attack:PrivilegeEscalation.T1546.012` — Image File Execution Options Injection
+- `mitre.attack:PrivilegeEscalation.T1546.013` — PowerShell Profile
+- `mitre.attack:PrivilegeEscalation.T1546.014` — Emond
+- `mitre.attack:PrivilegeEscalation.T1546.015` — Component Object Model Hijacking
+- `mitre.attack:PrivilegeEscalation.T1546.016` — Installer Packages
+- `mitre.attack:PrivilegeEscalation.T1546.017` — Udev Rules
+- `mitre.attack:PrivilegeEscalation.T1546.018` — Python Startup Hooks
+- `mitre.attack:PrivilegeEscalation.T1547` — Boot or Logon Autostart Execution
+- `mitre.attack:PrivilegeEscalation.T1547.001` — Registry Run Keys / Startup Folder
+- `mitre.attack:PrivilegeEscalation.T1547.002` — Authentication Package
+- `mitre.attack:PrivilegeEscalation.T1547.003` — Time Providers
+- `mitre.attack:PrivilegeEscalation.T1547.004` — Winlogon Helper DLL
+- `mitre.attack:PrivilegeEscalation.T1547.005` — Security Support Provider
+- `mitre.attack:PrivilegeEscalation.T1547.006` — Kernel Modules and Extensions
+- `mitre.attack:PrivilegeEscalation.T1547.007` — Re-opened Applications
+- `mitre.attack:PrivilegeEscalation.T1547.008` — LSASS Driver
+- `mitre.attack:PrivilegeEscalation.T1547.009` — Shortcut Modification
+- `mitre.attack:PrivilegeEscalation.T1547.010` — Port Monitors
+- `mitre.attack:PrivilegeEscalation.T1547.012` — Print Processors
+- `mitre.attack:PrivilegeEscalation.T1547.013` — XDG Autostart Entries
+- `mitre.attack:PrivilegeEscalation.T1547.014` — Active Setup
+- `mitre.attack:PrivilegeEscalation.T1547.015` — Login Items
+- `mitre.attack:PrivilegeEscalation.T1548` — Abuse Elevation Control Mechanism
+- `mitre.attack:PrivilegeEscalation.T1548.001` — Setuid and Setgid
+- `mitre.attack:PrivilegeEscalation.T1548.002` — Bypass User Account Control
+- `mitre.attack:PrivilegeEscalation.T1548.003` — Sudo and Sudo Caching
+- `mitre.attack:PrivilegeEscalation.T1548.004` — Elevated Execution with Prompt
+- `mitre.attack:PrivilegeEscalation.T1548.005` — Temporary Elevated Cloud Access
+- `mitre.attack:PrivilegeEscalation.T1548.006` — TCC Manipulation
+- `mitre.attack:PrivilegeEscalation.T1574` — Hijack Execution Flow
+- `mitre.attack:PrivilegeEscalation.T1574.001` — DLL
+- `mitre.attack:PrivilegeEscalation.T1574.004` — Dylib Hijacking
+- `mitre.attack:PrivilegeEscalation.T1574.005` — Executable Installer File Permissions Weakness
+- `mitre.attack:PrivilegeEscalation.T1574.006` — Dynamic Linker Hijacking
+- `mitre.attack:PrivilegeEscalation.T1574.007` — Path Interception by PATH Environment Variable
+- `mitre.attack:PrivilegeEscalation.T1574.008` — Path Interception by Search Order Hijacking
+- `mitre.attack:PrivilegeEscalation.T1574.009` — Path Interception by Unquoted Path
+- `mitre.attack:PrivilegeEscalation.T1574.010` — Services File Permissions Weakness
+- `mitre.attack:PrivilegeEscalation.T1574.011` — Services Registry Permissions Weakness
+- `mitre.attack:PrivilegeEscalation.T1574.012` — COR_PROFILER
+- `mitre.attack:PrivilegeEscalation.T1574.013` — KernelCallbackTable
+- `mitre.attack:PrivilegeEscalation.T1574.014` — AppDomainManager
+- `mitre.attack:PrivilegeEscalation.T1611` — Escape to Host
+- `mitre.attack:PrivilegeEscalation.T1626` — Abuse Elevation Control Mechanism
+- `mitre.attack:PrivilegeEscalation.T1626.001` — Device Administrator Permissions
+- `mitre.attack:PrivilegeEscalation.T1631` — Process Injection
+- `mitre.attack:PrivilegeEscalation.T1631.001` — Ptrace System Calls
+- `mitre.attack:Reconnaissance.T1589` — Gather Victim Identity Information
+- `mitre.attack:Reconnaissance.T1589.001` — Credentials
+- `mitre.attack:Reconnaissance.T1589.002` — Email Addresses
+- `mitre.attack:Reconnaissance.T1589.003` — Employee Names
+- `mitre.attack:Reconnaissance.T1590` — Gather Victim Network Information
+- `mitre.attack:Reconnaissance.T1590.001` — Domain Properties
+- `mitre.attack:Reconnaissance.T1590.002` — DNS
+- `mitre.attack:Reconnaissance.T1590.003` — Network Trust Dependencies
+- `mitre.attack:Reconnaissance.T1590.004` — Network Topology
+- `mitre.attack:Reconnaissance.T1590.005` — IP Addresses
+- `mitre.attack:Reconnaissance.T1590.006` — Network Security Appliances
+- `mitre.attack:Reconnaissance.T1591` — Gather Victim Org Information
+- `mitre.attack:Reconnaissance.T1591.001` — Determine Physical Locations
+- `mitre.attack:Reconnaissance.T1591.002` — Business Relationships
+- `mitre.attack:Reconnaissance.T1591.003` — Identify Business Tempo
+- `mitre.attack:Reconnaissance.T1591.004` — Identify Roles
+- `mitre.attack:Reconnaissance.T1592` — Gather Victim Host Information
+- `mitre.attack:Reconnaissance.T1592.001` — Hardware
+- `mitre.attack:Reconnaissance.T1592.002` — Software
+- `mitre.attack:Reconnaissance.T1592.003` — Firmware
+- `mitre.attack:Reconnaissance.T1592.004` — Client Configurations
+- `mitre.attack:Reconnaissance.T1593` — Search Open Websites/Domains
+- `mitre.attack:Reconnaissance.T1593.001` — Social Media
+- `mitre.attack:Reconnaissance.T1593.002` — Search Engines
+- `mitre.attack:Reconnaissance.T1593.003` — Code Repositories
+- `mitre.attack:Reconnaissance.T1594` — Search Victim-Owned Websites
+- `mitre.attack:Reconnaissance.T1595` — Active Scanning
+- `mitre.attack:Reconnaissance.T1595.001` — Scanning IP Blocks
+- `mitre.attack:Reconnaissance.T1595.002` — Vulnerability Scanning
+- `mitre.attack:Reconnaissance.T1595.003` — Wordlist Scanning
+- `mitre.attack:Reconnaissance.T1596` — Search Open Technical Databases
+- `mitre.attack:Reconnaissance.T1596.001` — DNS/Passive DNS
+- `mitre.attack:Reconnaissance.T1596.002` — WHOIS
+- `mitre.attack:Reconnaissance.T1596.003` — Digital Certificates
+- `mitre.attack:Reconnaissance.T1596.004` — CDNs
+- `mitre.attack:Reconnaissance.T1596.005` — Scan Databases
+- `mitre.attack:Reconnaissance.T1597` — Search Closed Sources
+- `mitre.attack:Reconnaissance.T1597.001` — Threat Intel Vendors
+- `mitre.attack:Reconnaissance.T1597.002` — Purchase Technical Data
+- `mitre.attack:Reconnaissance.T1598` — Phishing for Information
+- `mitre.attack:Reconnaissance.T1598.001` — Spearphishing Service
+- `mitre.attack:Reconnaissance.T1598.002` — Spearphishing Attachment
+- `mitre.attack:Reconnaissance.T1598.003` — Spearphishing Link
+- `mitre.attack:Reconnaissance.T1598.004` — Spearphishing Voice
+- `mitre.attack:Reconnaissance.T1681` — Search Threat Vendor Data
+- `mitre.attack:ResourceDevelopment.T1583` — Acquire Infrastructure
+- `mitre.attack:ResourceDevelopment.T1583.001` — Domains
+- `mitre.attack:ResourceDevelopment.T1583.002` — DNS Server
+- `mitre.attack:ResourceDevelopment.T1583.003` — Virtual Private Server
+- `mitre.attack:ResourceDevelopment.T1583.004` — Server
+- `mitre.attack:ResourceDevelopment.T1583.005` — Botnet
+- `mitre.attack:ResourceDevelopment.T1583.006` — Web Services
+- `mitre.attack:ResourceDevelopment.T1583.007` — Serverless
+- `mitre.attack:ResourceDevelopment.T1583.008` — Malvertising
+- `mitre.attack:ResourceDevelopment.T1584` — Compromise Infrastructure
+- `mitre.attack:ResourceDevelopment.T1584.001` — Domains
+- `mitre.attack:ResourceDevelopment.T1584.002` — DNS Server
+- `mitre.attack:ResourceDevelopment.T1584.003` — Virtual Private Server
+- `mitre.attack:ResourceDevelopment.T1584.004` — Server
+- `mitre.attack:ResourceDevelopment.T1584.005` — Botnet
+- `mitre.attack:ResourceDevelopment.T1584.006` — Web Services
+- `mitre.attack:ResourceDevelopment.T1584.007` — Serverless
+- `mitre.attack:ResourceDevelopment.T1584.008` — Network Devices
+- `mitre.attack:ResourceDevelopment.T1585` — Establish Accounts
+- `mitre.attack:ResourceDevelopment.T1585.001` — Social Media Accounts
+- `mitre.attack:ResourceDevelopment.T1585.002` — Email Accounts
+- `mitre.attack:ResourceDevelopment.T1585.003` — Cloud Accounts
+- `mitre.attack:ResourceDevelopment.T1586` — Compromise Accounts
+- `mitre.attack:ResourceDevelopment.T1586.001` — Social Media Accounts
+- `mitre.attack:ResourceDevelopment.T1586.002` — Email Accounts
+- `mitre.attack:ResourceDevelopment.T1586.003` — Cloud Accounts
+- `mitre.attack:ResourceDevelopment.T1587` — Develop Capabilities
+- `mitre.attack:ResourceDevelopment.T1587.001` — Malware
+- `mitre.attack:ResourceDevelopment.T1587.002` — Code Signing Certificates
+- `mitre.attack:ResourceDevelopment.T1587.003` — Digital Certificates
+- `mitre.attack:ResourceDevelopment.T1587.004` — Exploits
+- `mitre.attack:ResourceDevelopment.T1588` — Obtain Capabilities
+- `mitre.attack:ResourceDevelopment.T1588.001` — Malware
+- `mitre.attack:ResourceDevelopment.T1588.002` — Tool
+- `mitre.attack:ResourceDevelopment.T1588.003` — Code Signing Certificates
+- `mitre.attack:ResourceDevelopment.T1588.004` — Digital Certificates
+- `mitre.attack:ResourceDevelopment.T1588.005` — Exploits
+- `mitre.attack:ResourceDevelopment.T1588.006` — Vulnerabilities
+- `mitre.attack:ResourceDevelopment.T1588.007` — Artificial Intelligence
+- `mitre.attack:ResourceDevelopment.T1608` — Stage Capabilities
+- `mitre.attack:ResourceDevelopment.T1608.001` — Upload Malware
+- `mitre.attack:ResourceDevelopment.T1608.002` — Upload Tool
+- `mitre.attack:ResourceDevelopment.T1608.003` — Install Digital Certificate
+- `mitre.attack:ResourceDevelopment.T1608.004` — Drive-by Target
+- `mitre.attack:ResourceDevelopment.T1608.005` — Link Target
+- `mitre.attack:ResourceDevelopment.T1608.006` — SEO Poisoning
+- `mitre.attack:ResourceDevelopment.T1650` — Acquire Access
