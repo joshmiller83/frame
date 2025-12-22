@@ -14,7 +14,8 @@
       "properties": {
         "file": { "type": "string" },
         "sort_by": { "type": "string" },
-        "include_labels": { "type": "boolean" }
+        "include_labels": { "type": "boolean" },
+        "include_hierarchy_in_id": { "type": "boolean" }
       },
       "required": ["file"]
     },

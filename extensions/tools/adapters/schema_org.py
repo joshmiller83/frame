@@ -10,6 +10,7 @@ class SchemaOrgAdapter:
     def fetch_data(self):
         url = self.source_config['url']
         max_depth = self.source_config.get('max_depth')
+        include_hierarchy = self.config.get('output', {}).get('include_hierarchy_in_id', False)
         
         print(f"Fetching Schema.org data from {url}...")
         
@@ -70,36 +71,45 @@ class SchemaOrgAdapter:
                     if p_term:
                         children_map[p_term].append(term)
 
-        # 2. Filter by depth if required
-        valid_terms = set()
+        # 2. Filter by depth if required and build paths
+        term_to_path = {} # term -> list of path components
         
-        if max_depth is not None:
-            print(f"Filtering hierarchy to depth {max_depth} starting from 'Thing'...")
-            # BFS
-            queue = [('Thing', 0)]
+        # If we need depth filtering OR hierarchy names, we must do traversal
+        if max_depth is not None or include_hierarchy:
+            print(f"Traversing hierarchy from 'Thing' (max_depth={max_depth})...")
+            # BFS: (current_term, depth, path_list)
+            queue = [('Thing', 0, ['Thing'])]
             visited = set()
             
             while queue:
-                current_term, depth = queue.pop(0)
+                current_term, depth, current_path = queue.pop(0)
+                
+                # If term exists in our node map, record its path if first seen
+                if current_term in term_to_node and current_term not in term_to_path:
+                    term_to_path[current_term] = current_path
                 
                 if current_term in visited:
                     continue
                 visited.add(current_term)
                 
-                # If term exists in our node map, it's valid to include
-                if current_term in term_to_node:
-                    valid_terms.add(current_term)
-                
-                # If we haven't reached max depth, add children to queue
-                if depth < max_depth:
+                # If we haven't reached max depth (if set), add children
+                if max_depth is None or depth < max_depth:
                     for child in children_map.get(current_term, []):
-                        queue.append((child, depth + 1))
+                        # Ensure we don't cycle
+                        if child not in visited:
+                            new_path = current_path + [child]
+                            queue.append((child, depth + 1, new_path))
         else:
-            valid_terms = set(term_to_node.keys())
+            # Flat list if no traversal needed
+            for term in term_to_node:
+                term_to_path[term] = [term]
 
         # 3. Build result items
         items = []
-        for term in valid_terms:
+        for term, path in term_to_path.items():
+            if term not in term_to_node:
+                continue
+                
             node = term_to_node[term]
             
             # Label
@@ -111,14 +121,20 @@ class SchemaOrgAdapter:
             description = node.get('rdfs:comment', '')
             if isinstance(description, dict):
                 description = description.get('@value', '')
+            
+            # Determine ID
+            if include_hierarchy:
+                item_id = ".".join(path)
+            else:
+                item_id = term
                 
             items.append({
-                "id": term,
+                "id": item_id,
                 "label": label,
                 "description": description
             })
 
-        print(f"Selected {len(items)} items after filtering.")
+        print(f"Selected {len(items)} items.")
 
         provenance = {
             "index_url": url,

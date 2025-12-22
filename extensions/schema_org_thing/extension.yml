@@ -12,3 +12,4 @@ output:
   file: LEGEND-schema-org-thing.md
   sort_by: id
   include_labels: true
+  include_hierarchy_in_id: true
