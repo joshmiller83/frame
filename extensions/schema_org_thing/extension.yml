@@ -1,0 +1,12 @@
+id: schema-org-thing
+adapter: schema_org
+version: 1.0.0
+license: Creative Commons Attribution-ShareAlike License 3.0 (CC-BY-SA)
+maintainers: Schema.org
+namespace: Schema
+source:
+  url: https://schema.org/version/latest/schemaorg-all-https.jsonld
+output:
+  file: LEGEND-schema-org-thing.md
+  sort_by: id
+  include_labels: true
