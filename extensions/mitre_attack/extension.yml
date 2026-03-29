@@ -1,0 +1,21 @@
+id: Frame-MITRE-ATTACK
+version: 1.0.0
+license: Apache 2.0
+maintainers: Frame Maintainers
+namespace: mitre.attack
+extends: Domain.Security
+adapter: mitre_attack_stix
+
+source:
+  index_url: https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/index.json
+  collections:
+    - Enterprise ATT&CK
+    - Mobile ATT&CK
+    - ICS ATT&CK
+  version_rule: latest
+
+output:
+  file: LEGEND-frame-mitre-attack.md
+  sort_by: id
+  include_labels: true
+  include_hierarchy_in_id: true

@@ -1,0 +1,85 @@
+frame_core:
+  instruction: Treat Frame as a classification taxonomy. Tag resources by combining full facet names and child terms with a period (e.g., Domain.Technology).
+
+  meta:
+    id: Frame-Core
+    version: 0.0.1
+    license: Apache 2.0
+    maintainers: joshmiller83 (github)
+    created: 2025-12-18
+    updated: 2025-12-18
+
+  facets:
+    Domain:
+      description: What the resource is about.
+      tags:
+        Business: Concerns commercial, corporate, or market activities.
+        Technology: Concerns hardware, software, engineering, or digital systems.
+        Security: Concerns protection, safety, threats, or defense.
+        Science: Concerns empirical study, research, or natural phenomena.
+        Health: Concerns medicine, well-being, fitness, or biology.
+        Education: Concerns learning, teaching, training, or pedagogy.
+        Law: Concerns legal codes, regulations, compliance, or justice.
+        Civics: Concerns government, policy, society, or citizenship.
+        Finance: Concerns money, investment, banking, or economic value.
+        Environment: Concerns nature, climate, ecology, or sustainability.
+        Arts: Concerns culture, creativity, aesthetics, or entertainment.
+        Life: Concerns personal, lifestyle, household, or family matters.
+
+    Object:
+      description: What kind of resource it is.
+      tags:
+        Document: A textual record, report, or prose.
+        Data: Raw or structured information, numbers, or statistics.
+        Code: Source code, scripts, or executable logic.
+        Api: An interface definition, endpoint, or schema.
+        People: Information about individuals or groups.
+        Organization: Information about companies, institutions, or bodies.
+        System: A complex entity, architecture, or infrastructure.
+        Event: An occurrence, meeting, incident, or milestone.
+        Process: A workflow, sequence of steps, or method.
+        Policy: A rule, guideline, or governance requirement.
+        Product: A good, service, tool, or deliverable.
+        Media: Audio, video, image, or multimedia content.
+
+    Mode:
+      description: The intrinsic reasoning posture (Optional).
+      tags:
+        Orientation: Provides context or a mental model.
+        Definition: Establishes meanings or terms.
+        Exposition: Explains internal workings or details.
+        Interpretation: Explains significance or implications.
+        Procedure: Describes ordered steps to achieve a goal.
+        Playbook: Describes conditional actions ("if X, then Y").
+        Operation: Describes ongoing execution or maintenance.
+        Evaluation: Assesses quality, fit, or performance.
+        Comparison: Contrasts alternatives or options.
+        Audit: Verifies against rules or standards.
+        Design: Proposes structure, form, or solution.
+        Planning: Sequences work over time.
+        Synthesis: Combines sources into a coherent whole.
+        Diagnosis: Identifies the cause of a problem.
+        Risk: Surfaces threats and mitigations.
+        Messaging: Crafts communication or narrative.
+        Alignment: Builds shared understanding or consensus.
+
+    Context:
+      description: How the resource should be handled (Optional).
+      tags:
+        Public: Open for general consumption.
+        Internal: Restricted to the organization or group.
+        Confidential: Highly sensitive, restricted access.
+        TimeSensitive: Urgent or time-bound relevance.
+        HighStakes: Critical consequences for error.
+        LowStakes: Minimal consequences for error.
+
+  rules:
+    composition:
+      Domain: 1
+      Object: 1
+      Mode: 0..1
+      Context: 0..1
+      Total: Max 5
+    policies:
+      ambiguity: When uncertain, omit the facet.
+      stability: Meanings MUST NOT drift without a version bump.

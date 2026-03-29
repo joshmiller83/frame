@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "adapter": { "type": "string" },
+    "version": { "type": "string" },
+    "license": { "type": "string" },
+    "maintainers": { "type": "string" },
+    "namespace": { "type": "string" },
+    "extends": { "type": "string" },
+    "output": {
+      "type": "object",
+      "properties": {
+        "file": { "type": "string" },
+        "sort_by": { "type": "string" },
+        "include_labels": { "type": "boolean" },
+        "include_hierarchy_in_id": { "type": "boolean" }
+      },
+      "required": ["file"]
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "index_url": { "type": "string" },
+        "collections": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "version_rule": {
+          "type": "string",
+          "enum": ["latest", "pinned"]
+        },
+        "pinned_version": { "type": "string" }
+      },
+      "required": ["index_url", "collections"]
+    }
+  },
+  "required": ["id", "adapter", "version", "license", "namespace", "source", "output"]
+}
